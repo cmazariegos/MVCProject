@@ -1,0 +1,19 @@
+p{
+    font-style: italic;
+    color: blue;
+    font-size: 16px;
+}
+body {
+  background-color: #A4A4A4;
+}
+
+.centrado{
+  display: block;
+  margin: 20px auto;
+}
+.be-black{
+  background-color:black;
+  height: 200px;
+  width:100%;
+}
+
