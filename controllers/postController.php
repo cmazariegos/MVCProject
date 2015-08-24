@@ -12,7 +12,7 @@ class postController extends Controller{
     public function index() {
         $this->view->posts = $this->post->getPosts();
         $this->view->titulo = 'Post';
-        $this->view->renderizar('index','post');
+        $this->view->renderizar('index');
     }
 }
 

@@ -1,12 +1,11 @@
 <?php
-
-class cotizawebController extends Controller{
+class erpController extends Controller{
     
-    private $cotizaweb;
+    private $erp;
     
     public function __construct() {
         parent::__construct();
-        $this->cotizaweb = $this->loadModel('cotizaweb');
+        $this->erp = $this->loadModel('erp');
     }
 
     public function index() {

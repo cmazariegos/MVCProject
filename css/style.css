@@ -4,6 +4,8 @@
 .box{
 	box-shadow:0 2px 3px 1px rgba(0,0,0, .15);
 	box-sizing:border-box;padding:90px 100px;
+        color:#1E215A !important;
+        text-align: center;
 }
 .white-box{
 	background:#fff
@@ -21,7 +23,7 @@
 }
 .card{
 	padding:0 15px 30px;
-	margin:0;
+	margin:25px;
 	width:90%;
 	font-weight:400;
 	line-height:0;
@@ -30,7 +32,7 @@
 	box-sizing:border-box;
 }
 .card .box{
-	padding:0;
+	padding:10px;
 	background:#fff;
 	-webkit-transition:all .2s cubic-bezier(.3,.6,0.2,1.8);
 	transition:all .2s cubic-bezier(.3,.6,0.2,1.8)
@@ -51,13 +53,15 @@
 	margin:0;
 	line-height:26px;
 	font-size:16px;
-	color:#8B8B8D
+	color:#000000
 }
 .card li{
 	padding:10px;
 	margin:0;
 	line-height:10px;
 	font-size:16px;
+        text-align: left;
+        font-weight:bold;
 }
 
 /*.summary.kiteops-summary{background:#5CBC90}
@@ -88,3 +92,4 @@
     top:0px;
     left:0px;
 }
+

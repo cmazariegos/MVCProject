@@ -1,12 +1,12 @@
 <?php
 
-class cotizawebController extends Controller{
+class cotizaredController extends Controller{
     
-    private $cotizaweb;
+    private $cotizared;
     
     public function __construct() {
         parent::__construct();
-        $this->cotizaweb = $this->loadModel('cotizaweb');
+        $this->cotizared = $this->loadModel('cotizared');
     }
 
     public function index() {
@@ -15,3 +15,4 @@ class cotizawebController extends Controller{
         $this->view->renderizar('index');
     }
 }
+

@@ -1,12 +1,12 @@
-p{
-    font-style: italic;
-    color: blue;
-    font-size: 16px;
-}
 body {
   background-color: #A4A4A4;
 }
-
+blue-text{
+    color:#1E215A;
+}
+big-text{
+    font-size: 16px;
+}
 .centrado{
   display: block;
   margin: 20px auto;
