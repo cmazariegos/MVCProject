@@ -16,4 +16,13 @@ big-text{
   height: 200px;
   width:100%;
 }
-
+.logo{
+  margin: 5px 20px;
+  width:15%;
+  height: auto;
+}
+.logo-md-xs{
+  margin: 5px 35px;
+  width:25%;
+  height: auto;
+}
