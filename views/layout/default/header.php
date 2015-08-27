@@ -50,7 +50,13 @@
                                 <li><a href="#">Reclutamiento personal IT</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo BASE_URL.'ventas'; ?>">Ventas</a></li>
+                        <li><a href="#">Ventas</a>
+                            <ul class="submenu"> 
+                                <li><a href="<?php echo BASE_URL.'ventas'; ?>">Servidores HP</a></li>                                
+                                <li><a href="#">Computadora personal</a></li>                                 
+                                <li><a href="#">Otros</a></li>                                 
+                            </ul>      
+                        </li>
                         <li><a href="#" onclick="$('#contactUs').modal();">Contáctanos</a></li>                        
                     </ul>
                 </div>

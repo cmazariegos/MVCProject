@@ -61,18 +61,19 @@
 }
 
 .delimitador{
-    width:80%;	/* Ancho máximo */
-    margin:10px auto 25px auto;	/* Centramos la imagen */
+    width:100%;	/* Ancho máximo */
+    margin:10px auto;	/* Centramos la imagen */
 }
 /* El contenedor con el padding-top crea el tamaño de la imagen */
 .contenedor{
     height:0px;
     width:100%;
-    padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+    overflow: hidden;
+    padding-top:56.25%; /* Relación: 16/9 = 56.25% osea 9/16*100 = 56,25%*/
     position:relative;
 }
-/* El img se adapta al tamaño del contenedor */
-.contenedor img{
+/* El video se adapta al tamaño del contenedor */
+.contenedor iframe{
     position:absolute;
     height:100%;
     width:100%;
@@ -80,3 +81,6 @@
     left:0px;
 }
 
+.delimitador img{
+    width:100%;
+}
