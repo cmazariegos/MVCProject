@@ -1,12 +1,13 @@
+
 <?php
 
 class cotizaredController extends Controller{
     
-    private $cotizared;
+    //private $cotizared;
     
     public function __construct() {
         parent::__construct();
-        $this->cotizared = $this->loadModel('cotizared');
+        //$this->cotizared = $this->loadModel('cotizared');
     }
 
     public function index() {

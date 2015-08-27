@@ -11,7 +11,7 @@ myApp.controller('mainCtrl', function ($scope, $http, $timeout) {
     ];
 
 
-    $scope.mostrarMensaje = function()
+    $scope.mContactar = function()
     {
           $('#contactUs').modal();
     };  

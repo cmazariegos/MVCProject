@@ -6,22 +6,15 @@
         
         <link href="<?php echo $layoutParams['ruta_css']; ?>estilo.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="js/jquery.min.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="angular/angular.js"></script>   
-        <script src="js/jquery.min.js"></script>        
-        
+        <script src="angular/angular.js"></script> 
+                
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/menu.css" rel="stylesheet"> 
         <link href="css/responsive-menu.css" rel="stylesheet" >        
 	<!--script src="js/efectos.js"></script-->  
-        
-<!--  
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>        
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>    
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>   
--->    
+    
         <script src="js/responsive-menu.js"></script>  
         <script src="<?php echo $layoutParams['ruta_js']; ?>controllers.js"></script>  
         
@@ -44,7 +37,7 @@
             <div class="col-md-6 col-lg-6 hidden-xs">            
                 <div class="container" id="main" role="main">
                     <ul class="menu">
-                        <li><a href="<?php echo BASE_URL.'index'; ?> " class="heavenly">Inicio</a></li>
+                        <li><a href="<?php echo BASE_URL.'index'; ?> ">Inicio</a></li>
                         <li><a href="#">Desarrollo Web</a>
                             <ul class="submenu">
                                 <li><a href="#">SSISA ERP SGF</a></li>
@@ -57,15 +50,15 @@
                                 <li><a href="#">Reclutamiento personal IT</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Ventas</a></li>
-                        <li><a href="#">Contáctanos</a></li>                        
+                        <li><a href="<?php echo BASE_URL.'ventas'; ?>">Ventas</a></li>
+                        <li><a href="#" onclick="$('#contactUs').modal();">Contáctanos</a></li>                        
                     </ul>
                 </div>
             </div>            
             <div class="col-xs-12 visible-xs"> 
                 <div id="cssmenu">
                     <ul>
-                        <li><a href="#">Index</a></li>
+                        <li><a href="<?php echo BASE_URL.'index'; ?>">Index</a></li>
                         <li class='active'><a href="#">Desarrollo Web</a>
                             <ul>
                                 <li><a href="#">SSISA ERP SGF</a></li>
@@ -78,8 +71,8 @@
                                 <li><a href="#">Reclutamiento personal IT</a></li>
                             </ul>
                         </li>                        
-                        <li><a href="#">Ventas</a></li>
-                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="<?php echo BASE_URL.'ventas'; ?>">Ventas</a></li>
+                        <li><a href="#" class="list-group-item" onclick="$('#contactUs').modal();">Contáctanos</a></li>
                     </ul>
                 </div>
             </div>            

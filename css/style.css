@@ -43,17 +43,13 @@
 	transform:scale(1.04);
 	box-shadow:0 2px 14px 5px rgba(0,0,0, .15)
 }
-/*.card img{width:100%}
-.card .summary{background:#F1DD1E;color:#fff;padding:20px}
-.card span{line-height:20px;color:rgba(255,255,255,.8);font-size:17px}
-.card.dark .summary{color:#000}
-.card.dark span{color:#454545}*/
 .card p{
 	padding:20px;
 	margin:0;
 	line-height:26px;
 	font-size:16px;
-	color:#000000
+	color:#000000;
+        text-align: justify;    
 }
 .card li{
 	padding:10px;
