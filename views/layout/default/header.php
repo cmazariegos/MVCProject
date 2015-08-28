@@ -47,7 +47,7 @@
                         </li>
                         <li class="active"><a href="#">Outsourcing Services</a>
                             <ul class="submenu">
-                                <li><a href="#">Reclutamiento personal IT</a></li>
+                                <li><a href="<?php echo BASE_URL.'outsourcing'; ?>">Reclutamiento personal IT</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Ventas</a>
@@ -57,6 +57,14 @@
                                 <li><a href="#">Otros</a></li>                                 
                             </ul>      
                         </li>
+                        <li><a href="#">Servicios varios</a>
+                            <ul class="submenu"> 
+                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
+                                <li><a href="#">Instalaciones eléctricas</a></li>                                 
+                                <li><a href="#">Servicio de hosting</a></li>
+                                <li><a href="#">e-learning</a></li> 
+                            </ul>      
+                        </li>                        
                         <li onclick="$('#contactUs').modal();"><a href="#">Contáctanos</a></li>                        
                     </ul>
                 </div>
@@ -74,7 +82,7 @@
                         </li>
                         <li class='active'><a href="#">Outsourcing Services</a>
                             <ul>
-                                <li><a href="#">Reclutamiento personal IT</a></li>
+                                <li><a href="<?php echo BASE_URL.'outsourcing'; ?>">Reclutamiento personal IT</a></li>
                             </ul>
                         </li>                        
                         <li><a href="#">Ventas</a>
@@ -84,9 +92,18 @@
                                 <li><a href="#">Otros</a></li>                                 
                             </ul>                             
                         </li>
+                        <li><a href="#">Servicios varios</a>
+                            <ul> 
+                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
+                                <li><a href="#">Instalaciones eléctricas</a></li>                                 
+                                <li><a href="#">Servicio de hosting</a></li>
+                                <li><a href="#">e-learning</a></li> 
+                            </ul>      
+                        </li>                         
                         <li onclick="$('#contactUs').modal();"><a href="#">Contáctanos</a></li>
                     </ul>
                 </div>
             </div>            
         </div>
-        
+        <!--main container-->
+        <div class="main-container">

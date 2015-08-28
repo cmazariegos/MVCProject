@@ -1,10 +1,13 @@
 body {
   background-color: #A4A4A4;
 }
-blue-text{
+.main-container{
+    margin: 20px;
+}
+.blue-text{
     color:#1E215A;
 }
-big-text{
+.big-text{
     font-size: 16px;
 }
 .centrado{
