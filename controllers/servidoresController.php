@@ -1,11 +1,11 @@
 <?php
-class ventasController extends Controller{
+class servidoresController extends Controller{
     
-    //private $ventas;
+    //private $servidores;
     
     public function __construct() {
         parent::__construct();
-        //$this->ventas = $this->loadModel('ventas');
+        //$this->servidores = $this->loadModel('servidores');
     }
 
     public function index() {

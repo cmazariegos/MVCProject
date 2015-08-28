@@ -40,9 +40,9 @@
                         <li><a href="<?php echo BASE_URL.'index'; ?> ">Inicio</a></li>
                         <li><a href="#">Desarrollo Web</a>
                             <ul class="submenu">
-                                <li><a href="#">SSISA ERP SGF</a></li>
-                                <li><a href="#">SSISA Recarga en linea</a></li>
-                                <li><a href="#">Desarrollo a la medida</a></li>
+                                <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF</a></li>
+                                <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea</a></li>
+                                <li><a href="<?php echo BASE_URL.'desarrollomedida'; ?>">Desarrollo a la medida</a></li>
                             </ul>
                         </li>
                         <li class="active"><a href="#">Outsourcing Services</a>
@@ -52,12 +52,12 @@
                         </li>
                         <li><a href="#">Ventas</a>
                             <ul class="submenu"> 
-                                <li><a href="<?php echo BASE_URL.'ventas'; ?>">Servidores HP</a></li>                                
+                                <li><a href="<?php echo BASE_URL.'servidores'; ?>">Servidores HP</a></li>                                
                                 <li><a href="#">Computadora personal</a></li>                                 
                                 <li><a href="#">Otros</a></li>                                 
                             </ul>      
                         </li>
-                        <li><a href="#" onclick="$('#contactUs').modal();">Contáctanos</a></li>                        
+                        <li onclick="$('#contactUs').modal();"><a href="#">Contáctanos</a></li>                        
                     </ul>
                 </div>
             </div>            
@@ -67,9 +67,9 @@
                         <li><a href="<?php echo BASE_URL.'index'; ?>">Index</a></li>
                         <li class='active'><a href="#">Desarrollo Web</a>
                             <ul>
-                                <li><a href="#">SSISA ERP SGF</a></li>
-                                <li><a href="#">SSISA Recarga en linea</a></li>
-                                <li><a href="#">Desarrollo a la medida</a></li>
+                                <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF</a></li>
+                                <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea</a></li>
+                                <li><a href="<?php echo BASE_URL.'desarrollomedida'; ?>">Desarrollo a la medida</a></li>
                             </ul>
                         </li>
                         <li class='active'><a href="#">Outsourcing Services</a>
@@ -77,8 +77,14 @@
                                 <li><a href="#">Reclutamiento personal IT</a></li>
                             </ul>
                         </li>                        
-                        <li><a href="<?php echo BASE_URL.'ventas'; ?>">Ventas</a></li>
-                        <li><a href="#" class="list-group-item" onclick="$('#contactUs').modal();">Contáctanos</a></li>
+                        <li><a href="#">Ventas</a>
+                            <ul> 
+                                <li><a href="<?php echo BASE_URL.'servidores'; ?>">Servidores HP</a></li>                                
+                                <li><a href="#">Computadora personal</a></li>                                 
+                                <li><a href="#">Otros</a></li>                                 
+                            </ul>                             
+                        </li>
+                        <li onclick="$('#contactUs').modal();"><a href="#">Contáctanos</a></li>
                     </ul>
                 </div>
             </div>            
