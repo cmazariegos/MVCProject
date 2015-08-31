@@ -3,14 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/css/estilo.css</file>
             <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/header.php</file>
             <file>file:/C:/xampp/htdocs/MVCProject/css/menu.css</file>
-=======
             <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/js/controllers.js</file>
             <file>file:/C:/xampp/htdocs/MVCProject/controllers/postController.php</file>
->>>>>>> a289cd7669eff9ce1922be0c32a98fe90ae817df
         </group>
     </open-files>
 </project-private>
