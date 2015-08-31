@@ -16,11 +16,36 @@ myApp.controller('mainCtrl', function ($scope, $http, $timeout) {
           $('#contactUs').modal();
     };  
 
-    $scope.getList = function(){
-
-        $http.get($scope.ajaxUrl + '&classMethod=getList&type=' + $scope.currentListItem).success(function(source){
-            $scope.list = source;
+    $scope.getERP = function(){
+        //alert("Hello\nHow are you?");
+        /*$http.get($scope.ajaxUrl + '&classMethod=getList&type=' + $scope.currentListItem).success(function(r){
+            $scope.list = r;
+        });*/
+        
+        $http.get("http://localhost/MVCProject/post/getMsg").success(function(r){
+                        $scope.list = r;
+                        
+            alert($scope.list.msg);
         });
+        
+        //$scope.send("http://localhost/MVCProject/post/getMsg", "hi", function(r){
+          //  alert(r.msg);
+        //});    
+        //alert("si llego al fin");
     };
+    $scope.send = function(url, data, $cb){
+        $http.post(url, data, {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        }).success(function(response) {
+            if(response.result == 1){
+                $cb(response);
+                //alert("good!!");
+            } else if((response.result == 0)){
+                alert("error");
+            }
+        });
+    };    
     
 });
