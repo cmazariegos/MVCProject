@@ -5,9 +5,10 @@
         <group>
             <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/css/estilo.css</file>
             <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/header.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/elearning/index.phtml</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/cotizared/index.phtml</file>
             <file>file:/C:/xampp/htdocs/MVCProject/css/menu.css</file>
-            <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/js/controllers.js</file>
-            <file>file:/C:/xampp/htdocs/MVCProject/controllers/postController.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/aplication/DB.php</file>
         </group>
     </open-files>
 </project-private>

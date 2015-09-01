@@ -38,10 +38,10 @@
                 <div class="container" id="main" role="main">
                     <ul class="menu">
                         <li><a href="<?php echo BASE_URL.'index'; ?> ">Inicio</a></li>
-                        <li><a href="#">Desarrollo Web</a>
+                        <li><a href="#">Software</a>
                             <ul class="submenu">
-                                <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF</a></li>
-                                <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea</a></li>
+                                <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF (web)</a></li>
+                                <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea (web)</a></li>
                                 <li><a href="<?php echo BASE_URL.'desarrollomedida'; ?>">Desarrollo a la medida</a></li>
                             </ul>
                         </li>
@@ -53,16 +53,15 @@
                         <li><a href="#">Ventas</a>
                             <ul class="submenu"> 
                                 <li><a href="<?php echo BASE_URL.'servidores'; ?>">Servidores HP</a></li>                                
-                                <li><a href="#">Computadora personal</a></li>                                 
-                                <li><a href="#">Otros</a></li>                                 
+                                <li><a href="#">Computadora personal</a></li>                                                                
                             </ul>      
                         </li>
                         <li><a href="#">Servicios varios</a>
                             <ul class="submenu"> 
-                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
-                                <li><a href="#">Instalaciones eléctricas</a></li>                                 
+                                <li><a href="<?php echo BASE_URL.'elearning'; ?>">e-Learning</a></li>                                 
                                 <li><a href="#">Servicio de hosting</a></li>
-                                <li><a href="#">e-learning</a></li> 
+                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
+                                <li><a href="<?php echo BASE_URL.'instalacionelectrica'; ?>">Instalaciones eléctricas</a></li>                                
                             </ul>      
                         </li>                        
                         <li onclick="$('#contactUs').modal();"><a href="#">Contáctanos</a></li>                        
@@ -73,10 +72,10 @@
                 <div id="cssmenu">
                     <ul>
                         <li><a href="<?php echo BASE_URL.'index'; ?>">Index</a></li>
-                        <li class='active'><a href="#">Desarrollo Web</a>
+                        <li class='active'><a href="#">Software</a>
                             <ul>
-                                <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF</a></li>
-                                <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea</a></li>
+                                <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF (web)</a></li>
+                                <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea (web)</a></li>
                                 <li><a href="<?php echo BASE_URL.'desarrollomedida'; ?>">Desarrollo a la medida</a></li>
                             </ul>
                         </li>
@@ -88,16 +87,15 @@
                         <li><a href="#">Ventas</a>
                             <ul> 
                                 <li><a href="<?php echo BASE_URL.'servidores'; ?>">Servidores HP</a></li>                                
-                                <li><a href="#">Computadora personal</a></li>                                 
-                                <li><a href="#">Otros</a></li>                                 
+                                <li><a href="#">Computadora personal</a></li>                                                             
                             </ul>                             
                         </li>
                         <li><a href="#">Servicios varios</a>
-                            <ul> 
-                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
-                                <li><a href="#">Instalaciones eléctricas</a></li>                                 
+                            <ul>     
+                                <li><a href="<?php echo BASE_URL.'elearning'; ?>">e-Learning</a></li>                                 
                                 <li><a href="#">Servicio de hosting</a></li>
-                                <li><a href="#">e-learning</a></li> 
+                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
+                                <li><a href="<?php echo BASE_URL.'instalacionelectrica'; ?>">Instalaciones eléctricas</a></li>                                
                             </ul>      
                         </li>                         
                         <li onclick="$('#contactUs').modal();"><a href="#">Contáctanos</a></li>
