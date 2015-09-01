@@ -4,16 +4,16 @@
         <div class="row">
             <div class="col-md-6 col-lg-6">
                 <h2>Recarga en Línea</h2>
-                <form>
+                <form action="<?php echo BASE_URL.'sistemarecargas/cotizar'; ?>" method="post">
                     <div class="form-group">
                         <label for="inputEmail1">e-mail</label>
-                        <input type="email" class="form-control" id="Email" placeholder="e-mail">
+                        <input type="email" class="form-control" name="Email" placeholder="e-mail">
                     </div>
                     <div class="form-group">
                         <label for="Empresa">Nombre / Empresa</label>
-                        <input type="text" class="form-control" id="Nombre" placeholder="Ingrese un nombre">
+                        <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
                     </div>                                                  
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Cotizar</button>
                 </form>        
             </div>
             <div class="col-md-6 col-lg-6">&nbsp;</div>
