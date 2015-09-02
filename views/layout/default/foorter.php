@@ -1,6 +1,6 @@
         <!-- ends main container-->
         </div>
-        <div class="row be-black"></div>
+        <div class="row be-blue"></div>
         <div class="modal fade bs-example-modal-lg" tabindex="-1" id="contactUs" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
