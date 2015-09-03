@@ -2,7 +2,8 @@
     <div class="col-md-4">&nbsp;</div>
         <div class="col-md-4">
             <h2>COTIZA TU RED</h2>
-            <form>
+            <?php if(isset($this->msg)){echo $this->msg;}?>
+            <form action="<?php echo BASE_URL.'cotizared/cotizar'; ?>" method="post">
                 <div class="form-group">
                     <label for="inputEmail1">e-mail</label>
                     <input type="email" class="form-control" name="Email" placeholder="e-mail">
@@ -13,11 +14,11 @@
                 </div>                
                 <div class="form-group">
                     <label for="InputPaginas">Número de puntos de red</label>
-                    <input type="text" class="form-control" name="noPaginas" placeholder="Ingrese un número">
+                    <input type="text" class="form-control" name="noPuntos" placeholder="Ingrese un número">
                 </div>
                 <div class="checkbox">
                     <label>
-                      <input type="checkbox"> Con router
+                      <input type="checkbox" name="router"> Con router
                     </label>
                 </div>
                 <div class="form-group">
@@ -25,26 +26,26 @@
                 </div>                
                 <div class="radio">
                     <label>
-                        <input type="radio" value="option1" name="tipoCable" checked> Cat 5
+                        <input type="radio" value="op1" name="tipoCable" checked> Cat 5
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                      <input type="radio" value="option2" name="tipoCable"> Cat 6
+                      <input type="radio" value="op2" name="tipoCable"> Cat 6
                     </label>
                 </div>     
                 <div class="radio">
                     <label>
-                      <input type="radio" value="option3" name="tipoCable"> Otros
+                      <input type="radio" value="op3" name="tipoCable"> Otros
                     </label>
                 </div>                                  
                 
                 <button type="submit" class="btn btn-primary">Cotizar</button>   
                 
                 <div class="delimitador">
-                    <img class="centrado"  src="img/red.jpg"  />
+                    <img class="centrado"  src="<?php echo BASE_URL; ?>img/red.jpg"  />
                 </div>
-            </form>            
+            </form>             
         </div>
     <div class="col-md-4">&nbsp;</div>
 </div>

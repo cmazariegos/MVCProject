@@ -1,22 +1,46 @@
     <div class="row">  
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-            <h2>SSISA en Vista index</h2> 
+            <h2>SSISA - MAPA</h2> 
+            <div id="mapa" style="width: 900px; height: 400px;">
+
+            </div>             
         </div>                                   
     </div>
     <div class="row">
             <div class="col-md-3 centrado">
-                    <div class="list-group">
-                      <a href="#" class="list-group-item active">
-                            Acerca de SSISA
-                      </a>
-                      <a href="#" class="list-group-item" ng-click="mostrarMensaje()">Contactanos</a>                      
-                      <a href="#" class="list-group-item" ng-click="getERP()">Quienes Somos</a>
-                      <a href="#" class="list-group-item">Portafolio</a>
-                      <a href="<?php echo BASE_URL.'erp'; ?>" class="list-group-item">ERP</a>
-                      <a href="<?php echo BASE_URL.'cotizared'; ?> " class="list-group-item">Cotiza tu red</a>
-                      <a href="<?php echo BASE_URL.'cotizaweb'; ?> " class="list-group-item">Cotización tu página Web</a>                    
-                      <a href="#" class="list-group-item" onclick="$('#contactUs').modal();">Contactanos</a>			  
-                    </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        Referencias de clientes:
+                    </a>
+                    <a href="#" class="list-group-item">                      
+                        <h4>Ing. Edgar Castro:</h4>
+                        <h5>Proyectos:</h5>
+                        <ul> 
+                            <li>Banco de la República</li>
+                            <li>BellSouth</li>                            
+                            <li>Telefónica de Guatemala</li> 
+                            <li>Telefónica de El Salvador</li>                            
+                            <li>El Renap</li>
+                        </ul>                
+                        <p>Cel. (502) 4212-2925
+                        Proyectos: Outsourcing de Personal y Desarrollo de software</p>
+                    </a>
+                    <a href="#" class="list-group-item">                       
+                        <h4>Ing. Jorge Gómez</h4>
+                        <p>Director de Informática<br>
+                        Universidad de San Carlos de Guatemala<br>
+                        Cel. (502) 5951-6693<br>
+                        Proyecto: Desarrollo de software para la planilla de la USAC, en Jdeveloper
+                        Con Oracle, y ambiente web</p>
+                    </a>
+                    <a href="#" class="list-group-item">                       
+                        <h4>Ing. Byron Cifuentes</h4>
+                        <p>Jefe de Producción Post Pago<br> 
+                        Telefónica de Guatemala<br>
+                        Cel. (502) 5401-0907<br>
+                        Proyecto: Outsourcing de Personal</p>
+                    </a>
+                </div>
             </div>
             <div class="col-md-3">
 		<section>
@@ -68,7 +92,7 @@
                                     <h1>Renta y Venta</h1>                                       
                                     <h3>Equipos y Suministros</h3>
                                     <div class="delimitador">                                 
-                                        <img src="img/renta-equipo.jpg"  />
+                                        <img src="<?php echo BASE_URL; ?>img/renta-equipo.jpg"  />
                                     </div>                                            
                                 </div>
                                 <p>Ideal para proyectos, conferencias, eventos, PYMES y multinacionales.</p>
@@ -86,7 +110,7 @@
                                     <h3>Outsourcing</h3>                                       
                                     <h1>Personal IT</h1>
                                     <div class="delimitador">
-                                        <img src="img/solucion-rrhh.jpg"  />
+                                        <img src="<?php echo BASE_URL; ?>img/solucion-rrhh.jpg"  />
                                     </div>                                            
                                 </div>
                                 <p>Ideal para proyectos informáticos, IN-HOUSE, call center, BPOs.</p>
@@ -96,7 +120,7 @@
 		</section>                		
             </div>		
     </div>
-    <div class="row">  
+    <!--div class="row">  
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <table class="table table-bordered table-hover table-striped">
                 <tr ng-repeat="nombreDeObjeto in miVector">
@@ -105,6 +129,6 @@
                 </tr>
             </table>
         </div>                                   
-    </div>    
+    </div-->    
 
 

@@ -5,18 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href="<?php echo $layoutParams['ruta_css']; ?>estilo.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-        <script src="js/jquery.min.js"></script>         
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="angular/angular.js"></script> 
+        <link rel="stylesheet" href="<?php echo BASE_URL; ?>bootstrap/css/bootstrap.css">
+        <script src="<?php echo BASE_URL; ?>js/jquery.min.js"></script>         
+        <script src="<?php echo BASE_URL; ?>bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php echo BASE_URL; ?>angular/angular.js"></script> 
                 
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/menu.css" rel="stylesheet"> 
-        <link href="css/responsive-menu.css" rel="stylesheet" >        
+	<link href="<?php echo BASE_URL; ?>css/style.css" rel="stylesheet">
+	<link href="<?php echo BASE_URL; ?>css/menu.css" rel="stylesheet"> 
+        <link href="<?php echo BASE_URL; ?>css/responsive-menu.css" rel="stylesheet" >        
 	<!--script src="js/efectos.js"></script-->  
     
-        <script src="js/responsive-menu.js"></script>  
+        <script src="<?php echo BASE_URL; ?>js/responsive-menu.js"></script>  
         <script src="<?php echo $layoutParams['ruta_js']; ?>controllers.js"></script>  
+
+        <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&callback=init'></script>        
+        <script type="text/javascript">
+            var map;
+            function init() {
+                var mapOptions = {
+                    zoom: 15,
+                    center:new google.maps.LatLng(14.61082, -90.526574),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                map = new google.maps.Map(document.getElementById("mapa"),mapOptions);
+            }        
+        </script>
         
         <title>
         <?php 
@@ -26,13 +39,13 @@
         ?>
         </title>
     </head>
-    <body ng-controller="mainCtrl">
+    <body ng-controller="mainCtrl">         
         <div class="row">             
             <div class="col-md-6 col-lg-6 hidden-sm hidden-xs">
-                <img class="logo" src="img/ssisa_logo.png"  />
+                <img class="logo" src="<?php echo BASE_URL; ?>img/ssisa_logo.png"  />
             </div>
             <div class="col-xs-12 col-sm-12  visible-xs visible-sm">
-                <img class="logo-sm-xs" src="img/ssisa_logo.png"  />
+                <img class="logo-sm-xs" src="<?php echo BASE_URL; ?>img/ssisa_logo.png"  />
             </div>             
             <div class="col-md-6 col-lg-6 hidden-xs">            
                 <div class="container" id="main" role="main">
