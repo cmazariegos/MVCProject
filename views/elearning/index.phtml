@@ -17,7 +17,8 @@
                 </ul>                
             </div>            
             <div class="col-md-6 col-lg-6">
-                <form>
+                <?php if(isset($this->msg)){echo $this->msg;}?>
+                <form action="<?php echo BASE_URL.'elearning/cotizar'; ?>" method="post">
                     <div class="form-group">
                         <label for="inputEmail">e-mail</label>
                         <input type="email" class="form-control" name="Email" placeholder="e-mail">

@@ -31,11 +31,11 @@ class cotizaredController extends Controller{
                 $tc=" (otros)";      
             }   
             if (isset($_POST['router']) && $_POST['router'] == '1'){
-                $router=" con router ";
+                $router=" con router";
             } else {
-                $router=" sin router ";
+                $router=" sin router";
             }        
-            $texto='La persona: '.$_POST['Nombre']. ' ,ha solicitado una cotización de red, para '.$_POST['noPuntos'].' puntos,'.$router.' y con cable tipo:'.$tc.'. Enviar cotización al correo: '.$_POST['Email'];
+            $texto='La persona: '.$_POST['Nombre']. ', ha solicitado una cotización de red, para '.$_POST['noPuntos'].' puntos,'.$router.' y con cable tipo:'.$tc.'. Enviar cotización al correo: '.$_POST['Email'];
             $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
             $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización</div>';
         } else {

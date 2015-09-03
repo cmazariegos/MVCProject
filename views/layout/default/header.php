@@ -51,10 +51,11 @@
                 <div class="container" id="main" role="main">
                     <ul class="menu">
                         <li><a href="<?php echo BASE_URL.'index'; ?> ">Inicio</a></li>
-                        <li><a href="#">Software</a>
+                        <li><a href="#">Desarrollo web</a>
                             <ul class="submenu">
                                 <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF (web)</a></li>
                                 <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea (web)</a></li>
+                                <li><a href="<?php echo BASE_URL.'cotizaweb'; ?>">Cotizar página web</a></li>
                                 <li><a href="<?php echo BASE_URL.'desarrollomedida'; ?>">Desarrollo a la medida</a></li>
                             </ul>
                         </li>
@@ -85,11 +86,12 @@
                 <div id="cssmenu">
                     <ul>
                         <li><a href="<?php echo BASE_URL.'index'; ?>">Index</a></li>
-                        <li class='active'><a href="#">Software</a>
+                        <li class='active'><a href="#">Desarrollo web</a>
                             <ul>
                                 <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF (web)</a></li>
                                 <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea (web)</a></li>
-                                <li><a href="<?php echo BASE_URL.'desarrollomedida'; ?>">Desarrollo a la medida</a></li>
+                                <li><a href="<?php echo BASE_URL.'cotizaweb'; ?>">Cotizar página web</a></li>
+                                <li><a href="<?php echo BASE_URL.'desarrollomedida'; ?>">Desarrollo a la medida</a></li>                                
                             </ul>
                         </li>
                         <li class='active'><a href="#">Outsourcing Services</a>
