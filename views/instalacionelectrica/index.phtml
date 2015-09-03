@@ -1,10 +1,11 @@
 <div class="row">
-    <div class="col-md-4">&nbsp;</div>
-        <div class="col-md-4">
-            <h2>COTIZA TU INSTALACION ELÉCTRICA</h2>
-            <form>
+    <div class="col-md-4 col-lg-4">&nbsp;</div>
+        <div class="col-md-4 col-lg-4">
+            <h2>Cotizar instalación eléctrica</h2>
+            <?php if(isset($this->msg)){echo $this->msg;}?>
+            <form action="<?php echo BASE_URL.'instalacionelectrica/cotizar'; ?>" method="post">
                 <div class="form-group">
-                    <label for="inputEmail1">e-mail</label>
+                    <label for="inputEmail">e-mail</label>
                     <input type="email" class="form-control" name="Email" placeholder="e-mail">
                 </div>
                 <div class="form-group">
@@ -12,7 +13,7 @@
                     <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
                 </div>                
                 <div class="form-group">
-                    <label for="InputPaginas">Número de puntos de conección</label>
+                    <label for="InputPaginas">Número de puntos de conexión</label>
                     <input type="text" class="form-control" name="noPuntos" placeholder="Ingrese un número">
                 </div>                                            
                 
@@ -23,6 +24,6 @@
                 </div>
             </form>            
         </div>
-    <div class="col-md-4">&nbsp;</div>
+    <div class="col-md-4 col-lg-4">&nbsp;</div>
 </div>
 

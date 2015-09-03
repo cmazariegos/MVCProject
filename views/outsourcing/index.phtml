@@ -1,7 +1,35 @@
 <div class="row">
-    <div class="col-md-3 col-lg-3">&nbsp;</div>
-        <div class="col-md-6 col-lg-6">
-            <h2>Outsourcing Personal y Planilla</h2>
+    <div class="col-md-4 col-lg-4">&nbsp;</div>
+        <div class="col-md-4 col-lg-4">
+            <h2>Cotizar outsourcing personal y planilla</h2>
+            <?php if(isset($this->msg)){echo $this->msg;}?>
+            <form action="<?php echo BASE_URL.'outsourcing/cotizar'; ?>" method="post">
+                <div class="form-group">
+                    <label for="inputEmail1">e-mail</label>
+                    <input type="email" class="form-control" name="Email" placeholder="Ingrese su e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="Empresa">Nombre / Empresa</label>
+                    <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
+                </div>                
+                <div class="form-group">
+                    <label for="InputPuesto">Puesto a cotizar:</label>
+                    <input type="text" class="form-control" name="Puesto" placeholder="Ingrese puesto que desea cotizar">
+                </div>                                            
+                <div class="form-group">
+                    <label for="InputHerramienta">Herramienta a utilizar:</label>
+                    <input type="text" class="form-control" name="Herramienta" placeholder="Ingrese la herramienta a usar">
+                </div>
+                <div class="form-group">
+                    <label for="InputLugar">Ubicación de la empresa:</label>
+                    <input type="text" class="form-control" name="Lugar" placeholder="Ingrese un lugar">
+                </div>
+                <div class="form-group">
+                    <label for="InputTiempo">Tiempo a trabajar:</label>
+                    <input type="text" class="form-control" name="Tiempo" placeholder="Ingrese el tiempo a contratar">
+                </div>                   
+                <button type="submit" class="btn btn-primary">Cotizar</button> 
+            </form>                
             
             <h4>¿Por qué utilizar el outsourcing de personal?</h4>
             <p>                
@@ -24,6 +52,6 @@
             <p>Este servicio concluye cuando usted recibe el reporte de evaluación de todos los candidatos entrevistados y los mejores calificados para ser entrevistados por usted o su departamento de recursos humanos.</p>            
             <p>SSISA también le brinda el servicio de outsourcing de planilla, en la cual le llevamos la base de datos de su personal y nos encargamos del pago de la planilla respectiva.</p>
         </div>
-    <div class="col-md-3 col-lg-3">&nbsp;</div>
+    <div class="col-md-4 col-lg-4">&nbsp;</div>
 </div>
 
