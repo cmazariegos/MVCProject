@@ -15,10 +15,12 @@ body {
   margin: 10px auto;
 }
 .be-blue{
-  background-color:#1E215A;
-  height: 200px;
-  width:100%;
-  margin-top: 10px;
+  background-color:#184667;
+}
+.foorter-content{
+  padding: 10px;
+  color:#ffffff;
+  font-size: 17px;
 }
 .logo{
   margin: 5px 20px;

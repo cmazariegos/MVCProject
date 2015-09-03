@@ -1,6 +1,14 @@
         <!-- ends main container-->
         </div>
-        <div class="row be-blue"></div>
+        <div class="row be-blue foorter-content">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;Nos apasiona la atención personalizada a nuestros clientes. Una llamada telefónica o un correo electrónico representa mucho para Ud. por lo que estamos atendiendo sus problemas y necesidades con propuestas inmediatas.</p>
+            </div>            
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;(502) 2332-4463 | Guatemala, Guatemala</p>
+                <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;<a href="mailto:info@e-ssisa.com"> info@e-ssisa.com</a></p>
+            </div>            
+        </div>
         <div class="modal fade bs-example-modal-lg" tabindex="-1" id="contactUs" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -8,7 +16,12 @@
                         <h2>Contactanos</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                        
                     </div>                
-                    <div class="modal-body myModalBody">                    
+                    <div class="modal-body myModalBody"> 
+                        <div class="row">
+                            <div class="col-lg-12">
+                              
+                            </div>   
+                        </div>    
                         <div class="row">
                             <div class="col-md-6">   
                                 <h1>Mapa</h1>

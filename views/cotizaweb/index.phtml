@@ -2,9 +2,10 @@
     <div class="col-md-4">&nbsp;</div>
         <div class="col-md-4">
             <h2>COTIZA TU PAGINA</h2>
-            <form>
+            <?php if(isset($this->msg)){echo $this->msg;}?>
+            <form action="<?php echo BASE_URL.'cotizaweb/cotizar'; ?>" method="post">
                 <div class="form-group">
-                    <label for="inputEmail1">e-mail</label>
+                    <label for="inputEmail">e-mail</label>
                     <input type="email" class="form-control" name="Email" placeholder="e-mail">
                 </div>
                 <div class="form-group">
@@ -17,25 +18,24 @@
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> Responsive
+                        <input type="checkbox" name="responsive"> Responsive
                     </label>
                 </div>
                 <div class="delimitador">
-                    <img class="centrado"  src="img/responsive-website.jpg"  />
+                    <img class="centrado"  src="<?php echo BASE_URL; ?>img/responsive-website.jpg"  />
                 </div>                                    
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> Estática / Dinamica
+                        <input type="checkbox" name="estatica"> Estática / Dinamica
                     </label>
                 </div>       
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> Efectos de animación
+                        <input type="checkbox" name="animada"> Efectos de animación
                     </label>
                 </div>                 
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Cotizar</button>
             </form>            
-            <p><?php print_r($this->posts); ?></p>
         </div>
     <div class="col-md-4">&nbsp;</div>
 </div>
