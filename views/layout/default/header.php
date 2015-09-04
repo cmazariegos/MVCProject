@@ -17,19 +17,8 @@
     
         <script src="<?php echo BASE_URL; ?>js/responsive-menu.js"></script>  
         <script src="<?php echo $layoutParams['ruta_js']; ?>controllers.js"></script>  
-
-        <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&callback=init'></script>        
-        <script type="text/javascript">
-            var map;
-            function init() {
-                var mapOptions = {
-                    zoom: 15,
-                    center:new google.maps.LatLng(14.61082, -90.526574),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                map = new google.maps.Map(document.getElementById("mapa"),mapOptions);
-            }        
-        </script>
+        
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         
         <title>
         <?php 

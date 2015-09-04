@@ -7,7 +7,6 @@ class desarrollomedidaController extends Controller{
         parent::__construct();
         //$this->desarrollomedida = $this->loadModel('desarrollomedida');
     }
-
     public function index() {
         $this->view->renderizar('index');
     }

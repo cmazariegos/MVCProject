@@ -15,7 +15,7 @@ class cotizaredController extends Controller{
         $this->view->renderizar('index');
     }    
     public function cotizar(){
-        if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){            
+        if(!empty($_POST['Nombre']) && !empty($_POST['Email']) && !empty($_POST['noPuntos'])){            
             $tipoCable = $_POST['tipoCable'];  
             if ($tipoCable == "op1") {          
                 $tc=" (Cat 5)";      
@@ -35,7 +35,7 @@ class cotizaredController extends Controller{
             $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
             $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización</div>';
         } else {
-            $this->view->msg = '<div class="form-group"><div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe ingresar su nombre y correo</div></div>';
+            $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe ingresar su nombre, correo y numero de puntos de red</div>';
         }
         $this->view->renderizar('index');
     }    

@@ -19,11 +19,27 @@
                     <div class="modal-body myModalBody"> 
                         <div class="row">
                             <div class="col-lg-12">
+       
                               
                             </div>   
                         </div>    
                         <div class="row">
-                            <div class="col-md-6">   
+                            <div class="col-md-6"> 
+        <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&callback=init'></script>        
+        <script type="text/javascript">
+            var map;
+            function init() {
+                var mapOptions = {
+                    zoom: 15,
+                    center:new google.maps.LatLng(14.61082, -90.526574),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                map = new google.maps.Map(document.getElementById("mapa"),mapOptions);
+            }        
+        </script>
+            <div id="mapa" style="width: 300px; height: 300px;">
+
+            </div>                                 
                                 <h1>Mapa</h1>
                             </div>
                             <div class="col-md-6">
@@ -46,7 +62,7 @@
                                                 <label class="control-label">Mensaje:</label>
                                                 <textarea required="required" class="form-control" name="msg" id="texto" rows="5" placeholder="Contáctanos, escribe aquí tu mensaje."></textarea>
                                             </div>
-                                            <div class="g-recaptcha" data-sitekey="6Lc03QQTAAAAAJ2bgugZAsttK4BbLDTP3sk9jjNS"></div>
+                                            <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
                                             <p id="info">Gracias por contactarnos. Pronto nos estaremos comunicando contigo.</p>
                                             <button class="btn btn-primary"  type="submit">Enviar</button>
                                         </form>

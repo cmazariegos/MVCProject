@@ -28,7 +28,7 @@ class servidoresController extends Controller{
             $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
             $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización</div>';
         } else {
-            $this->view->msg = '<div class="form-group"><div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe ingresar su nombre y correo</div></div>';
+            $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe ingresar su nombre y correo</div>';
         }
         $this->view->renderizar('index');
     }     
