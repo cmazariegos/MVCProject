@@ -25,29 +25,5 @@ class sistemarecargasController extends Controller{
             $this->view->msg = '<div class="alert alert-danger" role="alert">No se resolvió correctamente el reCAPTCHA</div>';                        
         }             
         $this->view->renderizar('index');
-    }
-    public function recaptcha(){
-        $recaptcha="";
-
-        if($_REQUEST['g-recaptcha-response'] == null){
-            return false;
-        } else {                    
-            $recaptcha=$_REQUEST['g-recaptcha-response'];
-
-            if(!$recaptcha){
-                return false;
-                exit;
-            }
-            
-            $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcOTgwTAAAAAMCnC33QjZnjOk6k6ZEmsplPvuHV&response=".$recaptcha."&remoteip=".$_SERVER['REMOTE_ADDR']);        
-            $obj = json_decode($response,true);
-
-            if($obj['success']==1){
-                return true;
-            } else { 
-                return false;
-            }
-        }
-    }
-    
+    }   
 }
