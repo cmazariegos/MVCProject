@@ -42,6 +42,6 @@ class cotizaredController extends Controller{
             $this->view->msg = '<div class="alert alert-danger" role="alert">No se resolvió correctamente el reCAPTCHA</div>';                        
         }             
         $this->view->renderizar('index');
-    }    
+    }            
 }
 

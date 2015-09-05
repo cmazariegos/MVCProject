@@ -1,5 +1,6 @@
 body {
-  background-color: #A4A4A4;
+  //background-color: #A4A4A4 !important;
+  //background-color: black;
 }
 .main-container{
     margin: 20px;

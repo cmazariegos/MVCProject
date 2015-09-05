@@ -1,8 +1,8 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    <a href="#" class="list-group-item">                       
+        <h4>Ing. Byron Cifuentes</h4>
+        <p>Jefe de Producción Post Pago<br> 
+        Telefónica de Guatemala<br>
+        Cel. (502) 5401-0907<br>
+        Proyecto: Outsourcing de Personal</p>
+    </a>
 

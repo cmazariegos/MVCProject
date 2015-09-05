@@ -23,13 +23,6 @@ class View{
         } else {
             throw Exception('Error de vista');
         }        
-    }
-    
-    public function getLeft(){
-        //include_once ROOT .'views' . DS . 'layout' . DS . DEFAULT_LAYOUT . DS . 'left_column.phtml';        
-    }
-    public function getRight(){
-        include_once ROOT .'views' . DS . 'layout' . DS . DEFAULT_LAYOUT . DS . 'right_column.php';          
-    }
+    }    
 }
 

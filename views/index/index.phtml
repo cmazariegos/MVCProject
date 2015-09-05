@@ -1,8 +1,8 @@
-    <div class="row">  
+    <!--div class="row">  
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-            <h2>SSISA - MAPA</h2>              
+            <h2>SSISA</h2>                       
         </div>                                   
-    </div>
+    </div-->
     <div class="row">
             <div class="col-md-3 centrado">
                 <div class="list-group">
@@ -39,7 +39,39 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-3">
+<div class="col-md-9"> 
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <div id="slider" style="margin:0px auto;">
+                    <img src="img/red_virtual.jpg" alt="" data-transition='{"effect": "cubeUp", "slices": 9, "animSpeed": 1200, "delay": 100, "delayDir": "fromCentre", "easing": "easeInOutBack", "depthOffset": 300, "sliceGap": 30}' />
+                    <img src="img/outsourcing.jpg" alt=""  data-transition='{"effect": "cubeRight", "slices": 5, "delay": 200}' />
+                    <img src="img/desarrollo_web.jpg" alt=""  data-transition='{"effect": "cubeDown", "slices": 15, "animSpeed": 3000, "delay": 30, "easing": "easeInOutElastic", "depthOffset": 200, "sliceGap": 20}' />
+                    <img src="img/servidores.jpg" alt="" data-transition='{"effect": "cubeLeft", "slices": 5, "delay": 200, "delayDir": "toCentre"}' />
+                    <img src="img/erp.jpg" alt="" data-transition='{"effect": "cubeUp", "slices": 5, "animSpeed": 1300, "delay": 100, "easing": "easeInOutCubic", "depthOffset": 500, "sliceGap": 50}' />
+                    <!--img src="img/deus-ex2.jpg" alt="" data-transition='{"effect": "cubeRight", "slices": 5, "delay": 200, "delayDir": "last-first"}' /-->
+            </div>
+            
+            <script>!window.jQuery && document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+            <script src="js/jquery-migrate-1.1.1.min.js"></script>
+            <script src="js/jquery.ccslider-3.0.2.min.js"></script>
+            <script>
+                    $(function(){
+                            $('#demo-nav').find('a').tooltip({effect: 'slide'});
+                    });
+
+                    $(window).load(function(){
+                            $('#slider').ccslider({
+                                    _3dOptions: {
+                                            imageWidth: 900,
+                                            imageHeight: 350
+                                    }
+                            });
+                    });
+            </script>             
+        </div>    
+    </div>
+    <div class="row">
+            <div class="col-md-4">
 		<section>
                     <div class="cards">
                         <div class="card">
@@ -80,7 +112,7 @@
                     </div>
 		</section>  
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
 		<section>                 
                     <div class="cards">
                         <div class="card dark">
@@ -98,7 +130,7 @@
                     </div> 
 		</section>                     
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
 		<section>                 
                     <div class="cards">
                         <div class="card dark">
@@ -115,7 +147,9 @@
                         </div>
                     </div> 
 		</section>                		
-            </div>		
+            </div>
+    </div>
+</div>    
     </div>
     <!--div class="row">  
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
