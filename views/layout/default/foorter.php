@@ -13,7 +13,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2>Contactanos</h2>
+                        <h2>Nuestros Clientes</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                        
                     </div>                
                     <div class="modal-body"> 
@@ -73,7 +73,63 @@
                                 </div>                                
                             </div>
                         </div>                          
-                    </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >            
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-igss.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section>  
+                                </div>
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >            
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-renap.png"  />
+                                                    </div>             
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >                    
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-usac.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>   
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >                    
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-mineduc.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>                                
+                            </div>
+                        </div>                          
+                    </div>                    
                     <div class="modal-footer myModalFooter">                                            
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                     </div>

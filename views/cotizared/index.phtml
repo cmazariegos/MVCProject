@@ -2,62 +2,74 @@
     <div class="col-md-3 col-lg-3">
         <?php include_once ROOT .'views' . DS . 'layout' . DS . DEFAULT_LAYOUT . DS . 'left_column.php'; ?>
     </div>
-    <div class="col-md-1 col-lg-1">&nbsp;</div>
-    <div class="col-md-4 col-lg-4">
-        <h2>Cotizar instalación de red</h2>
-        <?php if(isset($this->msg)){echo $this->msg;}?>
-        <form action="<?php echo BASE_URL.'cotizared/cotizar'; ?>" method="post" id="formCotizar">
-            <div class="form-group">
-                <label for="inputEmail">e-mail</label>
-                <input type="email" class="form-control" name="Email" placeholder="e-mail">
+    <div class="col-md-6 col-lg-6">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="col-md-9 col-lg-9">
+                    &nbsp;
+                </div>
+                <div class="col-md-3 col-lg-3">&nbsp;</div>
             </div>
-            <div class="form-group">
-                <label for="Empresa">Nombre / Empresa</label>
-                <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <h3>Solicitar cotización de instalación de red</h3>
+                <?php if(isset($this->msg)){echo $this->msg;}?>
+                <form action="<?php echo BASE_URL.'cotizared/cotizar'; ?>" method="post" id="formCotizar">
+                    <div class="form-group">
+                        <label for="inputEmail">e-mail</label>
+                        <input type="email" class="form-control" name="Email" placeholder="e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="Empresa">Nombre / Empresa</label>
+                        <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputTel">Teléfono</label>
+                        <input type="text" class="form-control" name="Telefono" placeholder="Ingrese su teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputDir">Dirección</label>
+                        <input type="text" class="form-control" name="Direccion" placeholder="Ingrese su dirección">
+                    </div>            
+                    <div class="form-group">
+                        <label for="InputPuntos">Número de puntos de red</label>
+                        <input type="text" class="form-control" name="noPuntos" placeholder="Ingrese un número">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="router" value="1"> Con router
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="Empresa">Categoria de cableado</label>
+                    </div>                
+                    <div class="radio">
+                        <label>
+                            <input type="radio" value="op1" name="tipoCable" checked> Cat 5
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                          <input type="radio" value="op2" name="tipoCable"> Cat 6
+                        </label>
+                    </div>     
+                    <div class="radio">
+                        <label>
+                          <input type="radio" value="op3" name="tipoCable"> Otros
+                        </label>
+                    </div>                                  
+                    <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
+                    <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button>   
+                    <div class="delimitador">
+                        <img class="centrado"  src="<?php echo BASE_URL; ?>img/red.jpg"  />
+                    </div>
+                </form>         
             </div>
-            <div class="form-group">
-                <label for="InputTel">Teléfono</label>
-                <input type="text" class="form-control" name="Telefono" placeholder="Ingrese su teléfono">
-            </div>
-            <div class="form-group">
-                <label for="InputDir">Dirección</label>
-                <input type="text" class="form-control" name="Direccion" placeholder="Ingrese su dirección">
-            </div>            
-            <div class="form-group">
-                <label for="InputPuntos">Número de puntos de red</label>
-                <input type="text" class="form-control" name="noPuntos" placeholder="Ingrese un número">
-            </div>
-            <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="router" value="1"> Con router
-                </label>
-            </div>
-            <div class="form-group">
-                <label for="Empresa">Categoria de cableado</label>
-            </div>                
-            <div class="radio">
-                <label>
-                    <input type="radio" value="op1" name="tipoCable" checked> Cat 5
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                  <input type="radio" value="op2" name="tipoCable"> Cat 6
-                </label>
-            </div>     
-            <div class="radio">
-                <label>
-                  <input type="radio" value="op3" name="tipoCable"> Otros
-                </label>
-            </div>                                  
-            <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
-            <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button>   
-            <div class="delimitador">
-                <img class="centrado"  src="<?php echo BASE_URL; ?>img/red.jpg"  />
-            </div>
-        </form>             
+            <div class="col-md-6 col-lg-6">&nbsp;</div>
+        </div>        
     </div>
-    <div class="col-md-4 col-lg-4">&nbsp;</div>
+    <div class="col-md-3 col-lg-3">&nbsp;</div>
 </div>
 <script>
     function validarDatos(){

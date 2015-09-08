@@ -2,13 +2,58 @@
     <div class="col-md-3 col-lg-3">
         <?php include_once ROOT .'views' . DS . 'layout' . DS . DEFAULT_LAYOUT . DS . 'left_column.php'; ?>
     </div>
-    <div class="col-md-6 col-lg-6">
+    <div class="col-md-6 col-lg-6">        
         <div class="row">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <h3>COTIZAR IMPLEMENTACION DE PLATAFORMA PARA E-LEARNING</h3>  
+            <div class="col-md-12 col-lg-12">
+                <div class="col-md-9 col-lg-9">
+                    <h2>¿Que es e-Learning?</h2>
+                    <p>
+                        Es un aprendizaje que se apoya en medios electrónicos para su realización, sin importar la modalidad a distancia o presencial en que se contextualiza. Generalmente, es el aprendizaje basado o apoyado en tecnologías de redes como complemento del aprendizaje presencial, donde es posible incluir ejercicios de simulación, participar de discusiones grupales, enlaces de sitios de Internet, trabajos colaborativos, etc.  (Según Fainholc, 2008)                      
+                    </p>                   
                 </div>
-            </div>     
+                <div class="col-md-3 col-lg-3">&nbsp;</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="col-md-9 col-lg-9">
+                    <h2>¿Qué es una plataforma de e-Learning?</h2>
+                    <p>
+                        La plataforma de e-learning, es un espacio virtual de aprendizaje orientado a facilitar la experiencia de capacitación a distancia, tanto para empresas como para instituciones educativas.     
+                        Este sistema permite la creación de "aulas virtuales", interacción entre tutores y alumnos, realización de evaluaciones, el intercambio de archivos, la participación en foros, chats, etc.
+                    </p>                    
+                </div>
+                <div class="col-md-3 col-lg-3">&nbsp;</div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <?php if(isset($this->msg)){echo $this->msg;}?>                
+                <button onclick="$('#contizar').modal();" class="btn btn-success">Solicitar cotización</button>                    
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">&nbsp;</div>   
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="delimitador">
+                        <img src="<?php echo BASE_URL; ?>img/elearning.jpg"  />
+                    </div> 
+                </div> 
+            </div>
+        </div>        
+    </div>    
+    <div class="col-md-3 col-lg-3">&nbsp;</div>
+</div>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" id="contizar" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Solicitar cotización de plataforma para E-Learning</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                        
+            </div>                
+            <div class="modal-body"> 
+                <div class="row">
             <div class="col-md-6 col-lg-6 blue-text">
                 <h3>Herramientas que ofrecemos:</h3>
                 <ul> 
@@ -19,7 +64,6 @@
                 </ul>                
             </div>            
             <div class="col-md-6 col-lg-6">
-                <?php if(isset($this->msg)){echo $this->msg;}?>
                 <form action="<?php echo BASE_URL.'elearning/cotizar'; ?>" method="post" id="formCotizar">
                     <div class="form-group">
                         <label for="inputEmail">e-mail</label>
@@ -45,42 +89,13 @@
                     <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button>
                 </form>        
             </div>
-        </div>        
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <div class="col-md-9 col-lg-9">
-                    <h2>¿Que es e-Learning?</h2>
-                    <p>
-                        Es un aprendizaje que se apoya en medios electrónicos para su realización, sin importar la modalidad a distancia o presencial en que se contextualiza. Generalmente, es el aprendizaje basado o apoyado en tecnologías de redes como complemento del aprendizaje presencial, donde es posible incluir ejercicios de simulación, participar de discusiones grupales, enlaces de sitios de Internet, trabajos colaborativos, etc.  (Según Fainholc, 2008)                      
-                    </p>                   
-                </div>
-                <div class="col-md-3 col-lg-3">&nbsp;</div>
+                </div>                          
+            </div>                    
+            <div class="modal-footer myModalFooter">                                            
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <div class="col-md-9 col-lg-9">
-                    <h2>¿Qué es una plataforma de e-Learning?</h2>
-                    <p>
-                        La plataforma de e-learning, es un espacio virtual de aprendizaje orientado a facilitar la experiencia de capacitación a distancia, tanto para empresas como para instituciones educativas.     
-                        Este sistema permite la creación de "aulas virtuales", interacción entre tutores y alumnos, realización de evaluaciones, el intercambio de archivos, la participación en foros, chats, etc.
-                    </p>                    
-                </div>
-                <div class="col-md-3 col-lg-3">&nbsp;</div>
-            </div>
-        </div>        
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">&nbsp;</div>   
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div class="delimitador">
-                        <img src="<?php echo BASE_URL; ?>img/elearning.jpg"  />
-                    </div> 
-                </div> 
-            </div>
-        </div> 
     </div>
-    <div class="col-md-3 col-lg-3">&nbsp;</div>
 </div>
 <script>
     function validarDatos(){

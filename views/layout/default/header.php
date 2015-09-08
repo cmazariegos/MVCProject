@@ -40,7 +40,7 @@
                 <img class="logo-sm-xs" src="<?php //echo BASE_URL; ?>img/ssisa_logo.png"  />
             </div-->             
             <div class="col-md-12 col-lg-12 hidden-xs">            
-                <!--div class="container" role="main"-->
+                <div style="z-index: 1000 !important;">
                     <ul class="menu">
                         <li><a href="<?php echo BASE_URL.'index'; ?> ">Inicio</a></li>
                         <li><a href="#">Desarrollo web</a>
@@ -73,8 +73,8 @@
                         <li onclick="$('#contactUs').modal();"><a href="#">Nuestros Clientes</a></li>                        
                         <li><a href="<?php echo BASE_URL.'contacto'; ?>">Contáctanos</a></li>                        
                     </ul>
-                <!--/div-->
-            </div>            
+                </div>
+            </div>    
             <div class="col-xs-12 visible-xs"> 
                 <div id="cssmenu">
                     <ul>

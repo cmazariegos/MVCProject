@@ -1,15 +1,15 @@
-<div class="panel panel-primary">
+<!--div class="panel panel-primary">
     <div class="panel-heading">Referencias</div>
     <div class="panel-body"> 
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
+                    <!--ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>                        
                     </ol>
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+                    <!--div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <div class="delimitador">                                 
                                 <img src="<?php echo BASE_URL; ?>img/logo-banco-reformador.jpg"  />
@@ -35,7 +35,7 @@
                         </div>                        
                     </div>
                     <!-- Controls -->
-                    <a class="left carousel-control slider-control-custom" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <!--a class="left carousel-control slider-control-custom" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left slider-control-custom" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
@@ -48,7 +48,7 @@
 </div>
 
 
-    <!--a href="#" class="list-group-item">                      
+    <a href="#" class="list-group-item">                      
         <h4>Ing. Edgar Castro:</h4>
         <h5>Proyectos:</h5>
         <ul> 

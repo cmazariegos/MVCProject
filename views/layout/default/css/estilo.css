@@ -4,6 +4,7 @@ body {
 }
 .main-container{
     margin: 20px;
+    min-height: 700px;
 }
 .blue-text{
     color:#1E215A;
@@ -12,26 +13,31 @@ body {
     font-size: 16px;
 }
 .centrado{
-  display: block;
-  margin: 10px auto;
+    display: block;
+    margin: 10px auto;
 }
 .be-blue{
-  background-color:#184667;
+    background-color:#184667;
+}
+.blue-border{
+    border: 2px solid #1B97F0;
 }
 .foorter-content{
-  padding: 10px;
-  color:#ffffff;
-  font-size: 17px;
+    //position: relative;    
+    //margin-top: -50px;
+    padding: 10px;
+    color:#ffffff;
+    font-size: 17px;
 }
 .logo{
-  margin: 5px 20px;
-  width:25%;
-  height: auto;
+    margin: 5px 20px;
+    width:25%;
+    height: auto;
 }
 .logo-sm-xs{
-  margin: 5px 35px;
-  width:25%;
-  height: auto;
+    margin: 5px 35px;
+    width:25%;
+    height: auto;
 }
 label.error {
     color: red !important;

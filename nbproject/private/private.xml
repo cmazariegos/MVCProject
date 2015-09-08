@@ -3,12 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/left_column.php</file>
-            <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/header.php</file>
-            <file>file:/C:/xampp/htdocs/MVCProject/views/contacto/index.phtml</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/erp/bancos.phtml</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/views/erp/contabilidad.phtml</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/erpController.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/models/erpModel.php</file>
+            <file>file:/C:/xampp/htdocs/MVCProject/controllers/sistemarecargasController.php</file>
             <file>file:/C:/xampp/htdocs/MVCProject/views/index/index.phtml</file>
-            <file>file:/C:/xampp/htdocs/MVCProject/views/layout/default/foorter.php</file>
-            <file>file:/C:/xampp/htdocs/MVCProject/views/sistemarecargas/index.phtml</file>
         </group>
     </open-files>
 </project-private>
