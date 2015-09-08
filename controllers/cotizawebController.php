@@ -11,7 +11,7 @@ class cotizawebController extends Controller{
     }
     public function index() {
         //$this->view->posts = $this->cotizaweb->getPosts();
-        //$this->view->titulo = 'Post';
+        $this->view->titulo = 'SSISA - SOFTWARE';
         $this->view->renderizar('index');
     }
     public function cotizar(){
@@ -36,7 +36,7 @@ class cotizawebController extends Controller{
                 $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización</div>';
             } else {
-                $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe ingresar su nombre, correo y número de páginas</div>';
+                $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe llenar todo el formulario</div>';
             }
         } else {                        
             $this->view->msg = '<div class="alert alert-danger" role="alert">No se resolvió correctamente el reCAPTCHA</div>';                        

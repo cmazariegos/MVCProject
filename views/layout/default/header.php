@@ -19,7 +19,8 @@
     
         <script src="<?php echo BASE_URL; ?>js/responsive-menu.js"></script>  
         <script src="<?php echo $layoutParams['ruta_js']; ?>controllers.js"></script>  
-        
+
+        <script src="<?php echo BASE_URL; ?>js/jquery.validate.min.js"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
         
         <title>
@@ -32,14 +33,14 @@
     </head>
     <body ng-controller="mainCtrl">            
         <div class="row">             
-            <div class="col-md-6 col-lg-6 hidden-sm hidden-xs">
-                <img class="logo" src="<?php echo BASE_URL; ?>img/ssisa_logo.png"  />
+            <!--div class="col-md-6 col-lg-6 hidden-sm hidden-xs">
+                <img class="logo" src="<?php //echo BASE_URL; ?>img/ssisa_logo.png"  />
             </div>
             <div class="col-xs-12 col-sm-12  visible-xs visible-sm">
-                <img class="logo-sm-xs" src="<?php echo BASE_URL; ?>img/ssisa_logo.png"  />
-            </div>             
-            <div class="col-md-6 col-lg-6 hidden-xs">            
-                <div class="container" role="main">
+                <img class="logo-sm-xs" src="<?php //echo BASE_URL; ?>img/ssisa_logo.png"  />
+            </div-->             
+            <div class="col-md-12 col-lg-12 hidden-xs">            
+                <!--div class="container" role="main"-->
                     <ul class="menu">
                         <li><a href="<?php echo BASE_URL.'index'; ?> ">Inicio</a></li>
                         <li><a href="#">Desarrollo web</a>
@@ -55,7 +56,7 @@
                                 <li><a href="<?php echo BASE_URL.'outsourcing'; ?>">Reclutamiento personal IT</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Ventas</a>
+                        <li><a href="#">Venta de equipo</a>
                             <ul class="submenu"> 
                                 <li><a href="<?php echo BASE_URL.'servidores'; ?>">Servidores HP</a></li>                                
                                 <li><a href="#">Computadora personal</a></li>                                                                
@@ -64,14 +65,15 @@
                         <li><a href="#">Servicios varios</a>
                             <ul class="submenu"> 
                                 <li><a href="<?php echo BASE_URL.'elearning'; ?>">e-Learning</a></li>                                 
-                                <li><a href="#">Servicio de hosting</a></li>
+                                <li><a href="<?php echo BASE_URL.'hosting'; ?>">Servicio de hosting</a></li>
                                 <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
                                 <li><a href="<?php echo BASE_URL.'instalacionelectrica'; ?>">Instalaciones eléctricas</a></li>                                
                             </ul>      
-                        </li>                        
-                        <li onclick="$('#contactUs').modal();"><a href="#">Contáctanos</a></li>                        
+                        </li>
+                        <li onclick="$('#contactUs').modal();"><a href="#">Nuestros Clientes</a></li>                        
+                        <li><a href="<?php echo BASE_URL.'contacto'; ?>">Contáctanos</a></li>                        
                     </ul>
-                </div>
+                <!--/div-->
             </div>            
             <div class="col-xs-12 visible-xs"> 
                 <div id="cssmenu">
@@ -90,7 +92,7 @@
                                 <li><a href="<?php echo BASE_URL.'outsourcing'; ?>">Reclutamiento personal IT</a></li>
                             </ul>
                         </li>                        
-                        <li><a href="#">Ventas</a>
+                        <li><a href="#">Venta de equipo</a>
                             <ul> 
                                 <li><a href="<?php echo BASE_URL.'servidores'; ?>">Servidores HP</a></li>                                
                                 <li><a href="#">Computadora personal</a></li>                                                             
@@ -99,12 +101,13 @@
                         <li><a href="#">Servicios varios</a>
                             <ul>     
                                 <li><a href="<?php echo BASE_URL.'elearning'; ?>">e-Learning</a></li>                                 
-                                <li><a href="#">Servicio de hosting</a></li>
+                                <li><a href="<?php echo BASE_URL.'hosting'; ?>">Servicio de hosting</a></li>
                                 <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
                                 <li><a href="<?php echo BASE_URL.'instalacionelectrica'; ?>">Instalaciones eléctricas</a></li>                                
                             </ul>      
                         </li>                         
-                        <li onclick="$('#contactUs').modal();"><a href="#">Contáctanos</a></li>
+                        <li onclick="$('#contactUs').modal();"><a href="#">Nuestros Clientes</a></li>                        
+                        <li><a href="<?php echo BASE_URL.'contacto'; ?>">Contáctanos</a></li>                       
                     </ul>
                 </div>
             </div>            

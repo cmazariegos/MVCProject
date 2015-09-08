@@ -6,15 +6,19 @@
     <div class="col-md-4 col-lg-4">
         <h2>Cotizar outsourcing personal y planilla</h2>
         <?php if(isset($this->msg)){echo $this->msg;}?>
-        <form action="<?php echo BASE_URL.'outsourcing/cotizar'; ?>" method="post">
+        <form action="<?php echo BASE_URL.'outsourcing/cotizar'; ?>" method="post" id="formCotizar">
             <div class="form-group">
-                <label for="inputEmail1">e-mail</label>
-                <input type="email" class="form-control" name="Email" placeholder="Ingrese su e-mail">
+                <label for="inputEmail">e-mail</label>
+                <input type="email" class="form-control" name="Email" placeholder="e-mail">
             </div>
             <div class="form-group">
                 <label for="Empresa">Nombre / Empresa</label>
                 <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
-            </div>                
+            </div>
+            <div class="form-group">
+                <label for="InputTel">Teléfono</label>
+                <input type="text" class="form-control" name="Telefono" placeholder="Ingrese su teléfono">
+            </div>             
             <div class="form-group">
                 <label for="InputPuesto">Puesto a cotizar:</label>
                 <input type="text" class="form-control" name="Puesto" placeholder="Ingrese puesto que desea cotizar">
@@ -32,7 +36,7 @@
                 <input type="text" class="form-control" name="Tiempo" placeholder="Ingrese el tiempo a contratar">
             </div>
             <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
-            <button type="submit" class="btn btn-primary">Cotizar</button> 
+            <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button> 
         </form>                
 
         <h4>¿Por qué utilizar el outsourcing de personal?</h4>
@@ -58,4 +62,26 @@
     </div>
     <div class="col-md-4 col-lg-4">&nbsp;</div>
 </div>
+<script>
+    function validarDatos(){
+        $("#formCotizar").validate({
+                rules: {
+                        Email: { required:true, email: true},
+                        Nombre: { required: true},                           
+                        Telefono: { required:true, number:true},
+                        Lugar: { required:true}                         
+                },
+                messages: {
+                        Email: "Este campo debe tener formato de correo y es necesario.",
+                        Nombre : "El campo nombre es necesario",                          
+                        Telefono : "Este campo debe tener formato numérico y es necesario.",
+                        Lugar : "El campo dirección es necesario",                        
+                }
+        });
+        if($("#formCotizar").valid())
+        { 
+            $('#formCotizar').submit();
+        }       
+    }
 
+</script>

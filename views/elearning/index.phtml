@@ -20,21 +20,29 @@
             </div>            
             <div class="col-md-6 col-lg-6">
                 <?php if(isset($this->msg)){echo $this->msg;}?>
-                <form action="<?php echo BASE_URL.'elearning/cotizar'; ?>" method="post">
+                <form action="<?php echo BASE_URL.'elearning/cotizar'; ?>" method="post" id="formCotizar">
                     <div class="form-group">
                         <label for="inputEmail">e-mail</label>
                         <input type="email" class="form-control" name="Email" placeholder="e-mail">
                     </div>
                     <div class="form-group">
-                        <label for="Nombre">Nombre / Empresa</label>
+                        <label for="Empresa">Nombre / Empresa</label>
                         <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
                     </div>
+                    <div class="form-group">
+                        <label for="InputTel">Teléfono</label>
+                        <input type="text" class="form-control" name="Telefono" placeholder="Ingrese su teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputDir">Dirección</label>
+                        <input type="text" class="form-control" name="Direccion" placeholder="Ingrese su dirección">
+                    </div>                     
                     <div class="form-group">
                         <label for="Motivo">¿Para que deseas utilizar el servicio de e-learning?</label>
                         <input type="text" class="form-control" name="Motivo" placeholder="Ingrese el objetivo">
                     </div>
                     <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
-                    <button type="submit" class="btn btn-primary">Cotizar</button>
+                    <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button>
                 </form>        
             </div>
         </div>        
@@ -74,3 +82,26 @@
     </div>
     <div class="col-md-3 col-lg-3">&nbsp;</div>
 </div>
+<script>
+    function validarDatos(){
+        $("#formCotizar").validate({
+                rules: {
+                        Email: { required:true, email: true},
+                        Nombre: { required: true},                           
+                        Telefono: { required:true, number:true},
+                        Direccion: { required:true}                         
+                },
+                messages: {
+                        Email: "Este campo debe tener formato de correo y es necesario.",
+                        Nombre : "El campo nombre es necesario",                          
+                        Telefono : "Este campo debe tener formato numérico y es necesario.",
+                        Direccion : "El campo dirección es necesario",                        
+                }
+        });
+        if($("#formCotizar").valid())
+        { 
+            $('#formCotizar').submit();
+        }       
+    }
+
+</script>

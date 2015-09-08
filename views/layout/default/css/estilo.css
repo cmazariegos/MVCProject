@@ -25,11 +25,15 @@ body {
 }
 .logo{
   margin: 5px 20px;
-  width:15%;
+  width:25%;
   height: auto;
 }
 .logo-sm-xs{
   margin: 5px 35px;
   width:25%;
   height: auto;
+}
+label.error {
+    color: red !important;
+    font-style: italic;
 }
