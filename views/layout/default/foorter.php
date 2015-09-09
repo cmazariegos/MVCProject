@@ -13,65 +13,123 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2>Contactanos</h2>
+                        <h2>Nuestros Clientes</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                        
                     </div>                
-                    <div class="modal-body myModalBody"> 
+                    <div class="modal-body"> 
                         <div class="row">
-                            <div class="col-lg-12">
-       
-                              
-                            </div>   
-                        </div>    
-                        <div class="row">
-                            <div class="col-md-6"> 
-        <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&callback=init'></script>        
-        <script type="text/javascript">
-            var map;
-            function init() {
-                var mapOptions = {
-                    zoom: 15,
-                    center:new google.maps.LatLng(14.61082, -90.526574),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                map = new google.maps.Map(document.getElementById("mapa"),mapOptions);
-            }        
-        </script>
-            <div id="mapa" style="width: 300px; height: 300px;">
-
-            </div>                                 
-                                <h1>Mapa</h1>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <form method="post" id="mensajeForm" action="./?action=send_mess">                                        
-                                            <div class="form-group">
-                                            <div class="form-group">
-                                                <label class="control-label">Nombre:</label>
-                                                <input required="required" name="nombre" id="nombre" type="text" class="form-control inputT" ng-model="nuevoMensaje.correo"/>
-                                            </div>										
-                                                <label class="control-label">Correo:</label>
-                                                <input required="required" name="correo" id="correo" type="text" class="form-control inputT" ng-model="nuevoMensaje.correo"/>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label">Asunto:</label>
-                                                <input required="required" name="asunto" id="asunto" type="text" class="form-control inputT" ng-model="nuevoMensaje.correo"/>
-                                            </div>										
-                                            <div class="form-group">
-                                                <label class="control-label">Mensaje:</label>
-                                                <textarea required="required" class="form-control" name="msg" id="texto" rows="5" placeholder="Contáctanos, escribe aquí tu mensaje."></textarea>
-                                            </div>
-                                            <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
-                                            <p id="info">Gracias por contactarnos. Pronto nos estaremos comunicando contigo.</p>
-                                            <button class="btn btn-primary"  type="submit">Enviar</button>
-                                        </form>
-                                    </div>
-                                    <div class="col-md-2"  ></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >            
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-banco-reformador.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section>  
                                 </div>
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >            
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-banco-pro.png"  />
+                                                    </div>             
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >                    
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-claro.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>   
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >                    
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-movistar.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>                                
                             </div>
-                        </div>
-                    </div>
+                        </div>                          
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >            
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-igss.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section>  
+                                </div>
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >            
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-renap.png"  />
+                                                    </div>             
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >                    
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-usac.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>   
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <section>                 
+                                        <div class="cards">
+                                            <div class="card dark">
+                                                <div class="box" >                    
+                                                    <div class="delimitador">                                 
+                                                        <img src="<?php echo BASE_URL; ?>img/logo-mineduc.jpg"  />
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div>  
+                                    </section> 
+                                </div>                                
+                            </div>
+                        </div>                          
+                    </div>                    
                     <div class="modal-footer myModalFooter">                                            
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                     </div>

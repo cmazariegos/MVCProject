@@ -5,9 +5,7 @@ class indexController extends Controller{
         parent::__construct();
     }
     public function index() {
-        $post = $this->loadModel('post');
-        $this->view->posts = $post->getPosts();
-        $this->view->titulo = 'portada';
+        $this->view->titulo = 'SSISA';
         $this->view->renderizar('index');
     }
 }

@@ -36,6 +36,7 @@
     font-size: 15px;
     text-decoration: none;
 }
+/*cambia el color de los menus principales*/
 .menu li:hover {
     background-color: #05548C;
     background: -moz-linear-gradient(#05548C, #024E85);
@@ -68,6 +69,7 @@
     -o-perspective: 400px;
     perspective: 400px;
 }
+/*oculta los submenus*/
 .submenu li {
     opacity: 0;
     -webkit-transform: rotateY(90deg);
@@ -91,6 +93,7 @@
     max-height: 2000px;
     z-index: 10;
 }
+/*muestra los submenus*/
 .menu > li:hover .submenu li, .menu > li:focus .submenu li {
     opacity: 1;
 

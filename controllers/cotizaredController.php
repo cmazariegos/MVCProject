@@ -11,7 +11,7 @@ class cotizaredController extends Controller{
     }
     public function index() {
         //$this->view->posts = $this->cotizaweb->getPosts();
-        //$this->view->titulo = 'Post';
+        $this->view->titulo = 'SSISA - REDES';
         $this->view->renderizar('index');
     }    
     public function cotizar(){
@@ -32,16 +32,16 @@ class cotizaredController extends Controller{
                 } else {
                     $router=" sin router";
                 }        
-                $texto='La persona: '.$_POST['Nombre']. ', ha solicitado una cotización de red, para '.$_POST['noPuntos'].' puntos,'.$router.' y con cable tipo:'.$tc.'. Enviar cotización al correo: '.$_POST['Email'];
+                $texto='La persona: '.$_POST['Nombre']. ', ha solicitado una cotización de red, para '.$_POST['noPuntos'].' puntos,'.$router.' y con cable tipo:'.$tc.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
                 $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización</div>';
             } else {
-                $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe ingresar su nombre, correo y numero de puntos de red</div>';
+                $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe llenar todo el formulario</div>';
             }
         } else {                        
             $this->view->msg = '<div class="alert alert-danger" role="alert">No se resolvió correctamente el reCAPTCHA</div>';                        
         }             
         $this->view->renderizar('index');
-    }    
+    }            
 }
 

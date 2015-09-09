@@ -31,7 +31,7 @@ abstract class Controller{
             throw new Exception('Error de libreria');
         }
     }
-    public function recaptcha(){
+    protected function recaptcha(){
         $recaptcha="";
 
         if($_REQUEST['g-recaptcha-response'] == null){
@@ -53,6 +53,6 @@ abstract class Controller{
                 return false;
             }
         }
-    }
+    }    
 }
 
