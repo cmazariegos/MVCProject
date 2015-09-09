@@ -4,12 +4,13 @@
         </div>                                   
     </div-->
     <div class="row">
-        <div class="col-md-2">
-            <!--class="logo hidden-sm hidden-xs"--> 
-            <img style="width: 100%;" src="<?php echo BASE_URL; ?>img/ssisa_logo.png"  />
-            <!--img class="logo-sm-xs visible-xs visible-sm" src="<?php echo BASE_URL; ?>img/ssisa_logo.png"  /-->               
-        </div>        
-        <div class="col-md-8 col-lg-8">
+        <div class="col-md-2 col-lg-2 hidden-sm hidden-xs">
+            <img class="img-lg" src="<?php echo BASE_URL; ?>img/ssisa_logo.png"  />
+        </div>
+        <div class="col-xs-12 col-sm-12  visible-xs visible-sm">
+            <img class="img-md" src="<?php echo BASE_URL; ?>img/ssisa_logo.png"  />
+        </div>                  
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
             <div id="slider" style="margin:0px auto; z-index: 0 !important;">
                     <!--img src="img/red_virtual.jpg" alt="" data-transition='{"effect": "cubeUp", "slices": 9, "animSpeed": 1200, "delay": 100, "delayDir": "fromCentre", "easing": "easeInOutBack", "depthOffset": 300, "sliceGap": 30}' /-->
                     <img src="img/outsourcing.jpg" alt=""  data-transition='{"effect": "cubeRight", "slices": 5, "delay": 200}' />
@@ -37,9 +38,8 @@
                     });
             </script>             
         </div>    
-        <div class="col-md-2">&nbsp;</div>         
-    </div>
-            
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">&nbsp;</div>         
+    </div>       
     <div class="row">
         <div class="col-md-1">&nbsp;</div>
         <div class="col-md-10"> 
@@ -59,10 +59,10 @@
                                                 <a href="<?php echo BASE_URL.'erp/cargarContenido/bancos'; ?>">Bancos</a>
                                             </li>
                                             <li>
-                                                Cuentas por cobrar
+                                                Ctas. por cobrar
                                             </li>
                                             <li>
-                                                Cuentas por pagar
+                                                Ctas. por pagar
                                             </li>    
                                             <li>
                                                 Inventarios
@@ -71,15 +71,17 @@
                                                 Activos fijos
                                             </li> 
                                             <li>
-                                                Recursos humanos
+                                                RRHH
                                             </li> 
                                             <li>
                                                 Punto de venta 
                                             </li>                                        
                                         </ul>
+                                        <div class="delimitador">                                 
+                                            <img class="img-md" src="<?php echo BASE_URL; ?>img/erp/mod-rrhh.jpg"  />
+                                        </div>                                         
                                         <p>Información técnica: Nuestra aplicación funciona con un servidor glasfish o web logic, y con una base de datos oracle express o superiores.</p>                                    
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -90,14 +92,17 @@
                         <div class="cards">
                             <div class="card dark">
                                 <div class="box" >
-                                    <div class="blue-text">
-                                        <h1>Renta y Venta</h1>                                       
-                                        <h3>Equipos y Suministros</h3>
+                                    <div class="blue-text">                                     
+                                        <h3>Servidores HP</h3>
                                         <div class="delimitador">                                 
-                                            <img src="<?php echo BASE_URL; ?>img/renta-equipo.jpg"  />
-                                        </div>                                            
+                                            <a href="<?php echo BASE_URL.'servidores/cargarContenido/hp'; ?>"><img class="img-md" src="<?php echo BASE_URL; ?>img/servidores/HP ProLiant ML350 Gen9.jpg"  /></a>
+                                        </div> 
+                                        <h3>Servidores DELL</h3>
+                                        <div class="delimitador">                                 
+                                            <a href="<?php echo BASE_URL.'servidores/cargarContenido/dell'; ?>"><img class="img-md" src="<?php echo BASE_URL; ?>img/servidores/servidor-dell.jpg"  /></a>
+                                        </div>                                         
                                     </div>
-                                    <p>Ideal para proyectos, conferencias, eventos, PYMES y multinacionales.</p>
+                                    <p>Ideal para proyectos, PYMES y multinacionales.</p>
                                 </div>
                             </div>
                         </div> 

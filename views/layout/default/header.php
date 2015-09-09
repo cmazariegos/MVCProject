@@ -11,7 +11,7 @@
         <script src="<?php echo BASE_URL; ?>angular/angular.js"></script> 
                 
 	<link href="<?php echo BASE_URL; ?>css/style.css" rel="stylesheet">
-	<link href="<?php echo BASE_URL; ?>css/menu.css" rel="stylesheet"> 
+	<link href="<?php echo BASE_URL; ?>css/mi_menu.css" rel="stylesheet"> 
         <link href="<?php echo BASE_URL; ?>css/responsive-menu.css" rel="stylesheet" >
         
 	<link rel="stylesheet" href="css/slider.css" />
@@ -47,7 +47,14 @@
                             <ul class="submenu">
                                 <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF (web)</a>
                                     <ul class="submenu">
-                                        <li><a href="#">Conta</a></li>
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/contabilidad'; ?>">Contabilidad</a></li>
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/bancos'; ?>">Bancos</a></li>
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Cuentas por cobrar</a></li>
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Cuentas por pagar</a></li>    
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Inventarios</a></li> 
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Activos fijos</a></li> 
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Recursos humanos</a></li> 
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Punto de venta</a></li>                                        
                                     </ul>                                
                                 </li>
                                 <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea (web)</a></li>
@@ -62,8 +69,8 @@
                         </li>
                         <li><a href="#">Venta de equipo</a>
                             <ul class="submenu"> 
-                                <li><a href="<?php echo BASE_URL.'servidores'; ?>">Servidores HP</a></li>                                
-                                <li><a href="#">Computadora personal</a></li>                                                                
+                                <li><a href="<?php echo BASE_URL.'servidores/cargarContenido/hp'; ?>">Servidores HP</a></li>                                
+                                <li><a href="<?php echo BASE_URL.'servidores/cargarContenido/dell'; ?>">Servidores DELL</a></li>                                                                
                             </ul>      
                         </li>
                         <li><a href="#">Servicios varios</a>
@@ -98,8 +105,8 @@
                         </li>                        
                         <li><a href="#">Venta de equipo</a>
                             <ul> 
-                                <li><a href="<?php echo BASE_URL.'servidores'; ?>">Servidores HP</a></li>                                
-                                <li><a href="#">Computadora personal</a></li>                                                             
+                                <li><a href="<?php echo BASE_URL.'servidores/cargarContenido/hp'; ?>">Servidores HP</a></li>                                
+                                <li><a href="<?php echo BASE_URL.'servidores/cargarContenido/dell'; ?>">Servidores DELL</a></li>                                                              
                             </ul>                             
                         </li>
                         <li><a href="#">Servicios varios</a>

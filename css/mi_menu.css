@@ -1,13 +1,12 @@
-.menu, .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.menu, .submenu{
+    margin:0px;
+    padding:0px;
+}		
+ul, ol{
+    list-style:none;
 }
-.menu {
-    height: 35px;
-}
-/*color para los menus y submenus*/
-.menu li {
+.menu li a{
+    text-decoration: none;
     background: -moz-linear-gradient(#1B97F0, #1D5D8A);
     background: -ms-linear-gradient(#1B97F0, #1D5D8A);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1B97F0), color-stop(100%, #1D5D8A));
@@ -15,32 +14,15 @@
     background: -o-linear-gradient(#1B97F0, #1D5D8A);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1B97F0', endColorstr='#1D5D8A');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1B97F0', endColorstr='#1D5D8A')";
-    background: linear-gradient(#1B97F0, #1D5D8A);   
+    background: linear-gradient(#1B97F0, #1D5D8A);
+    
     border: 1px solid #FFFFFF;
-    min-width: 50px;
-    
+    color:#FFFFFF;
     padding: 10px;
-    min-height: 35px;
+    display: block;
     
 }
-
-.menu > li {
-    display: block;
-    float: left;
-    position: relative;
-}
-.menu > li:first-child {
-    border-radius: 5px 0 0;
-}
-.menu a {
-    border-left: 3px solid rgba(0, 0, 0, 0);
-    color: #FFFFFF;
-    display: block;
-    font-size: 15px;
-    text-decoration: none;
-}
-/*cambia el color de los menus principales*/
-.menu li:hover {
+.menu li a:hover{
     background-color: #05548C;
     background: -moz-linear-gradient(#05548C, #024E85);
     background: -ms-linear-gradient(#05548C, #024E85);
@@ -50,30 +32,15 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b')";
     background: linear-gradient(#05548C, #024E85);
-
-    border-bottom: 2px solid #FFFFFF;
-    border-top: 2px solid #FFFFFF;
 }
-.menu li:hover > a {
-    border-radius: 5px 0 0 0;
-    border-left: 3px solid #1B97F0;
-    color: #FFFFFF;
+.menu > li{
+	float: left;
 }
-/* submenu styles */
-.submenu {
-    left: 0;
-    max-height: 0;
+.menu li ul{
+    //display: none;
     position: absolute;
-    top: 100%;
-    z-index: 0;
-    -webkit-perspective: 400px;
-    -moz-perspective: 400px;
-    -ms-perspective: 400px;
-    -o-perspective: 400px;
-    perspective: 400px;
-}
-/*oculta los submenus*/
-.submenu li {
+    min-width: 75px;
+
     opacity: 0;
     -webkit-transform: rotateY(90deg);
     -moz-transform: rotateY(90deg);
@@ -86,28 +53,27 @@
     -ms-transition: opacity .4s, -ms-transform .5s;
     -o-transition: opacity .4s, -o-transform .5s;
     transition: opacity .4s, transform .5s;
-}
 
-.menu .submenu li:hover a {
-    border-left: 3px solid #1B97F0;
-    border-radius: 0;
-    color: #ffffff;
 }
-.menu > li:hover .submenu, .menu > li:focus .submenu {
-    max-height: 2000px;
-    z-index: 10;
-}
-/*muestra los submenus*/
-.menu > li:hover .submenu li, .menu > li:focus .submenu li {
-    opacity: 1;
-
+.menu li:hover > ul{ 
+    display: block;
+    opacity:1;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
     transform: none;
 }
-/* CSS3 delays for transition effects */
+.menu li ul li{
+	position: relative;
+}
+.menu li ul li ul{
+	right: -140px;
+	top:0px;
+}
+.menu > li:hover .submenu, .menu > li:focus .submenu {
+    z-index: 10;
+}
 .menu li:hover .submenu li:nth-child(1) {
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;

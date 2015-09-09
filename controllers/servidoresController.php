@@ -12,6 +12,17 @@ class servidoresController extends Controller{
     public function index() {
         $this->view->renderizar('index');
     }
+    public function cargarContenido($content) {       
+        $this->view->titulo = $content;
+        $this->view->renderizar($content);
+    }
+    public function prepararSolicitud($equipo, $procesador, $ram, $hd){
+        $this->view->equipo = $equipo;
+        $this->view->procesador = $procesador;   
+        $this->view->ram = $ram;   
+        $this->view->hd = $hd;           
+        $this->view->renderizar('solicitudcotizacion');        
+    }
     public function cotizar(){
         $servidores = "";
         if($this->recaptcha()){          
