@@ -4,8 +4,9 @@
     </div>
     <div class="col-md-6 col-lg-6"> 
         <div class="col-md-6 col-lg-6">
-            <h2>Solicitar cotizacion de servidor <?php if(isset($this->equipo)){echo $this->equipo;}?></h2>            
-            <form action="<?php echo BASE_URL.'elearning/cotizar'; ?>" method="post" id="formCotizar">
+            <h4>Solicitar cotizacion de servidor <?php if(isset($this->equipo)){echo $this->equipo;}?></h4>
+            <?php if(isset($this->msg)){echo $this->msg;}?>            
+            <form action="<?php echo BASE_URL.'servidores/cotizar'; ?>" method="post" id="formCotizar">
                 <div class="form-group">
                     <label for="inputEmail">e-mail</label>
                     <input type="email" class="form-control" name="Email" placeholder="e-mail">

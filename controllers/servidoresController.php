@@ -1,13 +1,13 @@
 <?php
 class servidoresController extends Controller{
     
-    //private $servidores;
+    private $servidores;
     private $smail;   
     
     public function __construct() {
         parent::__construct();
         $this->smail = $this->getLibrary('sendMail');          
-        //$this->servidores = $this->loadModel('servidores');
+        $this->servidores = $this->loadModel('servidores');
     }
     public function index() {
         $this->view->renderizar('index');
@@ -16,27 +16,20 @@ class servidoresController extends Controller{
         $this->view->titulo = $content;
         $this->view->renderizar($content);
     }
-    public function prepararSolicitud($equipo, $procesador, $ram, $hd){
-        $this->view->equipo = $equipo;
-        $this->view->procesador = $procesador;   
-        $this->view->ram = $ram;   
-        $this->view->hd = $hd;           
+    public function prepararSolicitud($equipo){
+        $this->view->datos = $this->servidores->getContent($equipo);
+
+        $this->view->equipo = $this->view->datos['modelo'];
+        $this->view->procesador = $this->view->datos['procesador'];   
+        $this->view->ram = $this->view->datos['RAM'];   
+        $this->view->hd = $this->view->datos['HD'];
+        
         $this->view->renderizar('solicitudcotizacion');        
     }
     public function cotizar(){
-        $servidores = "";
         if($this->recaptcha()){          
-            if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){              
-                if (isset($_POST['HP_ProLiant_DL360']) && $_POST['HP_ProLiant_DL360'] == '1'){
-                    $servidores = $servidores . "-*-HP ProLiant DL360 Gen9 ";
-                }
-                if (isset($_POST['HP_ProLiant_ML350']) && $_POST['HP_ProLiant_ML350'] == '1'){
-                    $servidores = $servidores . "-*-HP ProLiant ML350 Gen9 ";
-                } 
-                if (isset($_POST['HP_ProLiant_ML110']) && $_POST['HP_ProLiant_ML110'] == '1'){
-                    $servidores = $servidores . "-*-HP ProLiant ML110 Gen9 ";
-                } 
-                $texto='La persona: '.$_POST['Nombre']. ', ha solicitado una cotización de los siguientes servidores: '.$servidores.'. Enviar cotización al correo: '.$_POST['Email'];
+            if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){               
+                $texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización del siguiente servidor: '.$_POST['Modelo'].', con procesador '.$_POST['Procesador'].', '.$_POST['RAM'].' de memoria RAM y '.$_POST['HD'].' de disco duro. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
                 $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización</div>';
             } else {
@@ -45,6 +38,6 @@ class servidoresController extends Controller{
         } else {                        
             $this->view->msg = '<div class="alert alert-danger" role="alert">No se resolvió correctamente el reCAPTCHA</div>';                        
         }             
-        $this->view->renderizar('index');
+        $this->view->renderizar('solicitudcotizacion');
     }     
 }
