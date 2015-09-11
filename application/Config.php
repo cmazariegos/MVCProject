@@ -1,6 +1,6 @@
 <?php
 
-define('BASE_URL', 'http://localhost:8181/MVCProject/');
+define('BASE_URL', 'http://localhost/MVCProject/');
 define('DEFAULT_CONTROLLER', 'index');
 define('DEFAULT_LAYOUT', 'default');
 
