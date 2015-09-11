@@ -14,19 +14,19 @@ class servidoresModel extends Model{
                     'HD' => '80Tb'
                 );
                 break;
-            case "bancos":
+            case "HPProLiantML350Gen9":
                 $data = array(
-                    'modelo' => '',
-                    'procesador' => '',
-                    'RAM' => '',
+                    'modelo' => 'HP ProLiant ML350 Gen9',
+                    'procesador' => 'Intel Xeon E5-2620v3 6-Core (2.4 GHz 15MB L3 Caché )',
+                    'RAM' => '16GB RAM',
                     'HD' => ''
                 );
                 break;
-            case "rrhh":
+            case "HPProLiantML110Gen9":
                 $data = array(
-                    'modelo' => '',
-                    'procesador' => '',
-                    'RAM' => '',
+                    'modelo' => 'HP ProLiant ML110 Gen9',
+                    'procesador' => 'Intel Xeon E5-2603v3 6-Core (1.60GHz 15MB)',
+                    'RAM' => '8GB RAM',
                     'HD' => ''
                 );
                 break;
