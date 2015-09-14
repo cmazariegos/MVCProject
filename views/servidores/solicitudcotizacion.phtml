@@ -38,7 +38,20 @@
                 <div class="form-group">
                     <label for="HD">¿Capacidad de disco duro que deseas?</label>
                     <input type="text" class="form-control" name="HD" value="<?php if(isset($this->hd)){echo $this->hd;}?> ">
-                </div>                
+                </div>
+                <div class="form-group">
+                    <label for="InputLicencia">Licencia</label>
+                    <input type="text" class="form-control" name="Licencia" placeholder="Windows / Linux">
+                </div>
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="instalacion" value="1"> ¿Con servicio de instalación?
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Observaciones:</label>
+                    <textarea class="form-control" name="observacion" rows="5"></textarea>
+                </div>                 
                 <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
                 <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button>
             </form>               

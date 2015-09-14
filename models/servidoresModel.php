@@ -11,7 +11,7 @@ class servidoresModel extends Model{
                     'modelo' => 'HP ProLiant DL360 Gen9',
                     'procesador' => 'Intel Xeon E5-2630v3 8-Core (2.40GHz 20MB)',
                     'RAM' => '16GB RAM',
-                    'HD' => '80Tb'
+                    'HD' => ''
                 );
                 break;
             case "HPProLiantML350Gen9":
@@ -30,6 +30,14 @@ class servidoresModel extends Model{
                     'HD' => ''
                 );
                 break;
+            case "DellPowerEdgeT20":
+                $data = array(
+                    'modelo' => 'Dell PowerEdge T20',
+                    'procesador' => 'Intel 3.2 GHz Xeon E3-1225V3',
+                    'RAM' => '4GB RAM',
+                    'HD' => '1 TB'
+                );
+                break;            
         }
         return $data;  
     }
