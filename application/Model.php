@@ -1,7 +1,9 @@
 <?php
 class Model{
+    
+    protected $db;
     public function __construct() {
-        //echo 'hi';
+        $this->db = new DB();
     }
 
 }

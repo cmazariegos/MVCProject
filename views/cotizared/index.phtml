@@ -36,11 +36,19 @@
                         <label for="InputPuntos">Número de puntos de red</label>
                         <input type="text" class="form-control" name="noPuntos" placeholder="Ingrese un número">
                     </div>
-                    <div class="checkbox">
+                    <div class="form-group">
+                        <label for="InputNiveles">Número de niveles</label>
+                        <input type="text" class="form-control" name="noNiveles" placeholder="Niveles del lugar">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputArea">Área en metros cuadrados</label>
+                        <input type="text" class="form-control" name="Area" placeholder="Área del lugar">
+                    </div>                     
+                    <!--div class="checkbox">
                         <label>
                           <input type="checkbox" name="router" value="1"> Con router
                         </label>
-                    </div>
+                    </div-->
                     <div class="form-group">
                         <label for="Empresa">Categoria de cableado</label>
                     </div>                
@@ -78,13 +86,19 @@
                         Email: { required:true, email: true},
                         Nombre: { required: true},                           
                         Telefono: { required:true, number:true},
-                        Direccion: { required:true}                         
+                        Direccion: { required:true},                         
+                        noPuntos: { required:true, number:true},
+                        noNiveles: { required:true, number:true},
+                        Area: { required:true, number:true}
                 },
                 messages: {
                         Email: "Este campo debe tener formato de correo y es necesario.",
                         Nombre : "El campo nombre es necesario",                          
                         Telefono : "Este campo debe tener formato numérico y es necesario.",
-                        Direccion : "El campo dirección es necesario",                        
+                        Direccion : "El campo dirección es necesario",  
+                        noPuntos: "Este campo debe tener formato numérico y es necesario.",
+                        noNiveles: "Este campo debe tener formato numérico y es necesario.",
+                        Area: "Este campo debe tener formato numérico y es necesario.",                      
                 }
         });
         if($("#formCotizar").valid())

@@ -31,11 +31,19 @@
                     <div class="form-group">
                         <label for="InputDir">Dirección</label>
                         <input type="text" class="form-control" name="Direccion" placeholder="Ingrese su dirección">
-                    </div>             
+                    </div>                    
                     <div class="form-group">
                         <label for="InputPaginas">Número de puntos de conexión</label>
                         <input type="text" class="form-control" name="noPuntos" placeholder="Ingrese un número">
-                    </div>                                            
+                    </div>  
+                    <div class="form-group">
+                        <label for="InputNiveles">Número de niveles</label>
+                        <input type="text" class="form-control" name="noNiveles" placeholder="Niveles del lugar">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputArea">Área en metros cuadrados</label>
+                        <input type="text" class="form-control" name="Area" placeholder="Área del lugar">
+                    </div>                     
                     <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
                     <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button>                   
                     <div class="delimitador">
@@ -56,13 +64,19 @@
                         Email: { required:true, email: true},
                         Nombre: { required: true},                           
                         Telefono: { required:true, number:true},
-                        Direccion: { required:true}                         
+                        Direccion: { required:true}, 
+                        noPuntos: { required:true, number:true},
+                        noNiveles: { required:true, number:true},
+                        Area: { required:true, number:true}
                 },
                 messages: {
                         Email: "Este campo debe tener formato de correo y es necesario.",
                         Nombre : "El campo nombre es necesario",                          
                         Telefono : "Este campo debe tener formato numérico y es necesario.",
-                        Direccion : "El campo dirección es necesario",                        
+                        Direccion : "El campo dirección es necesario",  
+                        noPuntos: "Este campo debe tener formato numérico y es necesario.",
+                        noNiveles: "Este campo debe tener formato numérico y es necesario.",
+                        Area: "Este campo debe tener formato numérico y es necesario.",
                 }
         });
         if($("#formCotizar").valid())

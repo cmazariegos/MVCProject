@@ -5,11 +5,13 @@ class postModel extends Model{
     }
     
     public function getPosts(){
-        $post = array(
+        /*$post = array(
             'id' => 1,
             'nombre' => 'holaPostModel'
         );
-        return $post;
+        return $post;*/
+        $clientes = $this->db->select();
+        return $clientes;
     }
 }
 
