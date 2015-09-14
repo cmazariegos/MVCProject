@@ -28,8 +28,16 @@ class servidoresController extends Controller{
     }
     public function cotizar(){
         if($this->recaptcha()){          
-            if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){               
-                $texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización del siguiente servidor: '.$_POST['Modelo'].', con procesador '.$_POST['Procesador'].', '.$_POST['RAM'].' de memoria RAM y '.$_POST['HD'].' de disco duro. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
+            if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){
+                if (isset($_POST['instalacion']) && $_POST['instalacion'] == '1'){
+                    $instalacion = " con servicio de instalación";
+                } else {
+                    $instalacion = " sin servicio de instalación";
+                }                
+                $texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización del siguiente servidor: '.$_POST['Modelo'].', con procesador '.$_POST['Procesador'].', '.$_POST['RAM'].' de memoria RAM, '.$_POST['HD'].' de disco duro, y'.$instalacion.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
+                if(!empty($POST['observacion'])){
+                    $texto = $texto. ' . Observación: '. $POST['observacion'];
+                }
                 $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización</div>';
             } else {

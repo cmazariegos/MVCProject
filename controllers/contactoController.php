@@ -12,7 +12,7 @@ class contactoController extends Controller{
         if($this->recaptcha()){         
             if(!empty($_POST['Nombre']) && !empty($_POST['Email']) && !empty($_POST['msg'])){                    
                 $texto='La persona: '.$_POST['Nombre'].'te he enviado el siguiente mensaje:'.$_POST['msg'].' Puedes comunicarte con esta persona al correo: '.$_POST['Email'].' o al teléfono: '.$_POST['Telefono'];
-                $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
+                $this->smail->send('Contactando desde el sitio web de SSISA', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto nos estaremos comunicando con usted.</div>';
             } else {
                 $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe llenar todo el formulario.</div>';
