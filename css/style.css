@@ -1,6 +1,5 @@
 :focus{outline:none;}
 ::-moz-focus-inner{border:0;}
-
 .box{
 	box-shadow:0 2px 3px 1px rgba(0,0,0, .15);
 	box-sizing:border-box;padding:90px 100px;

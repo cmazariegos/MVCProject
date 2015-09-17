@@ -1,6 +1,9 @@
 body {
-  //background-color: #A4A4A4 !important;
-  //background-color: #EEE !important;
+    background: url("../../../../img/fondo.jpg") no-repeat fixed center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .main-container{
     margin: 20px;
@@ -9,6 +12,9 @@ body {
 .blue-text{
     color:#1E215A;
 }
+.white-text{
+    color:#FFFFFF;
+}
 .big-text{
     font-size: 16px;
 }
@@ -16,8 +22,12 @@ body {
     display: block;
     margin: 10px auto;
 }
+.be-white
+{
+    background-color: rgba(255,255,255,0.7);
+}
 .be-blue{
-    background-color:#184667;
+    background-color: rgba(24,70,103,0.8);    
 }
 .blue-border{
     border: 2px solid #1B97F0;

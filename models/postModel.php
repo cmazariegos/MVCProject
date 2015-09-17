@@ -2,8 +2,7 @@
 class postModel extends Model{
     public function __construct() {
         parent::__construct();
-    }
-    
+    } 
     public function getPosts(){
         /*$post = array(
             'id' => 1,
@@ -11,6 +10,7 @@ class postModel extends Model{
         );
         return $post;*/
         $clientes = $this->db->select();
+        $this->db->close();
         return $clientes;
     }
 }

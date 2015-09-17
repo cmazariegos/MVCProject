@@ -1,5 +1,4 @@
 <?php
-
 class postController extends Controller{
     
     private $post;
@@ -9,16 +8,13 @@ class postController extends Controller{
         parent::__construct();
         $this->post = $this->loadModel('post');
     }
-
     public function index() {
         $this->view->posts = $this->post->getPosts();
         $this->view->titulo = 'Post';
         $this->view->renderizar('index');
     }
-    
     public function getMsg(){
         $r=1;
-
         if($r==1){
             $this->msg = "Hola";
         } else {
