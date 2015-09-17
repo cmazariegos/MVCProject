@@ -4,30 +4,134 @@
     </div>
     <div class="col-md-1 col-lg-1">&nbsp;</div>
     <div class="col-md-4 col-lg-4 be-white">
-        <h2>Desarrollo a la Medida</h2>
-
-        <h4>¿Por qué utilizar el desarrollo a la medida?</h4>
-        <p>                
-            Cada empresa cuenta con necesidades, intereses y problemas diferentes. Dichas diferencias poseen su génesis en las características y particularidades de sus negocios, y en definitiva de la realidad del mercado del cual forman parte.
-            En SSISA creemos en la calidad concebida como la satisfacción de las necesidades de Nuestros clientes , es por ello que nuestro servicio de desarrollo de aplicaciones se centra en crear soluciones de calidad, que satisfagan las necesidades particulares de cada cliente, su mercado y su estrategia de negocios.
-            ¿Qué es un desarrollo a medida?
-            Un desarrollo a medida consiste en la elaboración de un producto de software basado en las especificaciones particulares del cliente. De esta manera el producto se adapta a las necesidades del cliente y no al revés como suele suceder con la adquisición de paquetes de software comerciales. Para ello se requiere una clara identificación las necesidades del cliente y su correspondiente traducción en especificaciones de software.
-            Para la creación de un Desarrollo a Medida, es necesaria la definición de un Proyecto que arroje como resultado el producto de software con las características identificadas.
-        </p>
-        <h2>Herramientas en que utilizamos:</h2>
-        <ol>
-            <li>Jdeveloper,</li>
-            <li>C#, .NET,</li>
-            <li>HTML, PHP,</li>
-            <li>Bases de datos: Oracle, SQL Server, MYSQL, …,</li>
-            <li>Sistemas operativos: Windows, Linux, IOS MAC, Android, …</li>
-            <li>Weblogic y Glassfish,</li>
-            <li>Developer Forms,</li>
-            <li>MQ Series,</li>
-            <li>Sockets,</li>
-            <li>Web services.</li>
-        </ol>
+        <div class="row">      
+            <div class="col-md-12 col-lg-12">
+                <h2>Desarrollo a la Medida</h2>
+                <h4>¿Por qué utilizar el desarrollo a la medida?</h4>
+                <p>                
+                    Cada empresa cuenta con necesidades, intereses y problemas diferentes. Dichas diferencias poseen su génesis en las características y particularidades de sus negocios, y en definitiva de la realidad del mercado del cual forman parte.
+                    En SSISA creemos en la calidad concebida como la satisfacción de las necesidades de Nuestros clientes , es por ello que nuestro servicio de desarrollo de aplicaciones se centra en crear soluciones de calidad, que satisfagan las necesidades particulares de cada cliente, su mercado y su estrategia de negocios.
+                    ¿Qué es un desarrollo a medida?
+                    Un desarrollo a medida consiste en la elaboración de un producto de software basado en las especificaciones particulares del cliente. De esta manera el producto se adapta a las necesidades del cliente y no al revés como suele suceder con la adquisición de paquetes de software comerciales. Para ello se requiere una clara identificación las necesidades del cliente y su correspondiente traducción en especificaciones de software.
+                    Para la creación de un Desarrollo a Medida, es necesaria la definición de un Proyecto que arroje como resultado el producto de software con las características identificadas.
+                </p>
+                <h2>Herramientas que utilizamos:</h2>
+                <ol>
+                    <li>Jdeveloper,</li>
+                    <li>C#, .NET,</li>
+                    <li>HTML, PHP,</li>
+                    <li>Bases de datos: Oracle, SQL Server, MYSQL, …,</li>
+                    <li>Sistemas operativos: Windows, Linux, IOS MAC, Android, …</li>
+                    <li>Weblogic y Glassfish,</li>
+                    <li>Developer Forms,</li>
+                    <li>MQ Series,</li>
+                    <li>Sockets,</li>
+                    <li>Web services.</li>
+                </ol>                
+            </div>            
+        </div>             
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <?php if(isset($this->msg)){echo $this->msg;}?>     
+                <form> 
+                    <button onclick="$('#contizar').modal();" class="btn btn-success">Solicitar cotización</button> 
+                </form>
+            </div>
+        </div>         
     </div>
     <div class="col-md-4 col-lg-4">&nbsp;</div>
 </div>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" id="contizar" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Solicitar cotización de desarrollo a la medida</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                        
+            </div>                
+            <div class="modal-body"> 
+                <div class="row">
+            <div class="col-md-6 col-lg-6 blue-text">
+                <form action="<?php echo BASE_URL.'desarrollomedida/cotizar'; ?>" method="post" id="formCotizar">
+                    <div class="form-group">
+                        <label for="inputEmail">e-mail</label>
+                        <input type="email" class="form-control" name="Email" placeholder="e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="Empresa">Nombre / Empresa</label>
+                        <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputTel">Teléfono</label>
+                        <input type="text" class="form-control" name="Telefono" placeholder="Ingrese su teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputDir">Dirección</label>
+                        <input type="text" class="form-control" name="Direccion" placeholder="Ingrese su dirección">
+                    </div>                     
+                    <div class="form-group">
+                        <label for="InputLenguaje">Lenguaje de desarrollo</label>
+                        <input type="text" class="form-control" name="Lenguaje" placeholder="Ingrese el lenguaje">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputDB">Base de Datos</label>
+                        <input type="text" class="form-control" name="DB" placeholder="Oracle, MySQL, SQL Server, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputSistema">Sistema operativo</label>
+                        <input type="text" class="form-control" name="Sistema" placeholder="Windows, Linux, Android, otros.">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputTipoApp">Tipo de aplicación</label>
+                        <input type="text" class="form-control" name="Tipo" placeholder="Web, Cliente-Servidor, otro">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputUsuarios">Cantidad de usuarios</label>
+                        <input type="text" class="form-control" name="Usuarios" placeholder="Ingrese la cantidad de usuarios">
+                    </div>                    
+                    <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
+                    <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button>
+                </form>                    
+            </div>            
+            <div class="col-md-6 col-lg-6 blue-text">&nbsp;</div>
+                </div>                          
+            </div>                    
+            <div class="modal-footer myModalFooter">                                            
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function validarDatos(){
+        $("#formCotizar").validate({
+                rules: {
+                        Email: { required:true, email: true},
+                        Nombre: { required: true},                           
+                        Telefono: { required:true, number:true},
+                        Direccion: { required:true},
+                        Lenguaje: { required:true},
+                        DB : { required:true},
+                        Sistema : { required:true},
+                        Tipo: { required:true},
+                        Usuarios: { required:true, number:true}
+                        
+                },
+                messages: {
+                        Email: "Este campo debe tener formato de correo y es necesario.",
+                        Nombre : "El campo nombre es necesario",                          
+                        Telefono : "Este campo debe tener formato numérico y es necesario.",
+                        Direccion : "El campo dirección es necesario", 
+                        Lenguaje : "Este campo es necesario",
+                        DB : "Este campo es necesario",
+                        Sistema : "Este campo es necesario",
+                        Tipo : "Este campo es necesario",
+                        Usuarios : "Este campo debe tener formato numérico y es necesario.", 
+                }
+        });
+        if($("#formCotizar").valid())
+        { 
+            $('#formCotizar').submit();
+        }       
+    }
 
+</script>
