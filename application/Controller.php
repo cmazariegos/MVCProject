@@ -24,7 +24,8 @@ abstract class Controller{
         
         if (is_readable($rutaLibreria)) {
             require_once $rutaLibreria;
-            $libreria = $libreria::getMe();
+            //$libreria = $libreria::getMe();
+            $libreria = new $libreria();
             return $libreria;
         } else {
             throw new Exception('Error de libreria');
