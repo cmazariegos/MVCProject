@@ -16,7 +16,7 @@ class elearningController extends Controller{
     public function cotizar(){
         if($this->recaptcha()){          
             if(!empty($_POST['Nombre']) && !empty($_POST['Email']) && !empty($_POST['Motivo'])){                       
-                $texto='La persona: '.$_POST['Nombre']. ', ha solicitado una cotización de e-learning, para '.$_POST['Motivo'].'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
+                $texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de e-learning, para '.$_POST['Motivo'].'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
                 $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización.</div>';
             } else {
