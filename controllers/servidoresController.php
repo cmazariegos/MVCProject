@@ -40,12 +40,12 @@ class servidoresController extends Controller{
                     $texto = $texto. ' . Observación: '. $_POST['observacion'];
                 }
                 $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
-                $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización</div>';
+                $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización.</div>';
             } else {
-                $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe ingresar su nombre y correo</div>';
+                $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe ingresar su nombre y correo.</div>';
             }
         } else {                        
-            $this->view->msg = '<div class="alert alert-danger" role="alert">No se resolvió correctamente el reCAPTCHA</div>';                        
+            $this->view->msg = '<div class="alert alert-danger" role="alert">No se resolvió correctamente el reCAPTCHA.</div>';                        
         }             
         $this->view->renderizar('solicitudcotizacion');
     }     
