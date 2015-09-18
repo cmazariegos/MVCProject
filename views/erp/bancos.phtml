@@ -2,14 +2,15 @@
     <div class="col-md-3 col-lg-3">
         <?php include_once ROOT .'views' . DS . 'layout' . DS . DEFAULT_LAYOUT . DS . 'left_column.php'; ?>
     </div>
-    <div class="col-md-6 col-lg-6">
+    <div class="col-md-6 col-lg-6 be-white">
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="col-md-9 col-lg-9">
                     
                     <h2>Modulo de bancos</h2>
-                    <?php if(isset($this->contenido)){echo $this->contenido;}?>   
-                    
+                    <div class="delimitador"> 
+                        <?php if(isset($this->contenido)){echo $this->contenido;}?>   
+                    </div>
                 </div>
                 <div class="col-md-3 col-lg-3">&nbsp;</div>
             </div>
@@ -34,7 +35,19 @@
                     <div class="form-group">
                         <label for="InputDir">Dirección</label>
                         <input type="text" class="form-control" name="Direccion" placeholder="Ingrese su dirección">
-                    </div>             
+                    </div>   
+                    <div class="form-group">
+                        <label for="InputUsuarios">Cantidad de usuarios</label>
+                        <input type="text" class="form-control" name="Usuarios" placeholder="Ingrese la cantidad de usuarios">
+                    </div> 
+                    <div class="form-group">
+                        <label for="InputSistema">¿Para que sistema operativo?</label>
+                        <input type="text" class="form-control" name="Sistema" placeholder="Windows / Linux ">
+                    </div> 
+                    <div class="form-group">
+                        <label for="InputServidor">¿Con que servidor de aplicaciones?</label>
+                        <input type="text" class="form-control" name="Servidor" placeholder="Weblogic / Glassfish ">
+                    </div>                    
                     <div class="g-recaptcha" data-sitekey="6LcOTgwTAAAAANzXJ8XcyGl05oEQ5A7xv1Go6T4Z"></div>
                     <button onclick="validarDatos();" class="btn btn-primary">Cotizar</button>
                 </form>    
@@ -51,13 +64,19 @@
                         Email: { required:true, email: true},
                         Nombre: { required: true},                           
                         Telefono: { required:true, number:true},
-                        Direccion: { required:true}                         
+                        Direccion: { required:true},           
+                        Usuarios: { required:true, number:true},
+                        Sistema: { required:true},
+                        Servidor: { required:true}
                 },
                 messages: {
                         Email: "Este campo debe tener formato de correo y es necesario.",
                         Nombre : "El campo nombre es necesario",                          
                         Telefono : "Este campo debe tener formato numérico y es necesario.",
-                        Direccion : "El campo dirección es necesario",                        
+                        Direccion : "El campo dirección es necesario", 
+                        Usuarios:"Este campo debe tener formato numérico y es necesario",
+                        Sistema:"Este campo es necesario",
+                        Servidor:"Este campo es necesario",
                 }
         });
         if($("#formCotizar").valid())

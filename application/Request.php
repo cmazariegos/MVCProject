@@ -16,10 +16,9 @@ class Request
             $url = filter_input(INPUT_GET, 'url',FILTER_SANITIZE_URL);
             $url = explode('/', $url);
             $url =  array_filter($url);
-            
             $this->controlador = strtolower(array_shift($url));
             $this->metodo = strtolower(array_shift($url));
-            $this->argumentos = $url;            
+            $this->argumentos = $url;          
         }        
         
         if(!$this->controlador){
