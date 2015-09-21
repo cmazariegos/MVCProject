@@ -4,7 +4,7 @@
     </div>
     <div class="col-md-6 col-lg-6 be-white"> 
         <div class="col-md-6 col-lg-6">
-            <h4>Solicitar cotizacion de servidor <?php if(isset($this->equipo)){echo $this->equipo;}?></h4>
+            <h4>Solicitar cotización de servidor <?php if(isset($this->equipo)){echo $this->equipo;}?></h4>
             <?php if(isset($this->msg)){echo $this->msg;}?>            
             <form action="<?php echo BASE_URL.'servidores/cotizar'; ?>" method="post" id="formCotizar">
                 <div class="form-group">
@@ -28,15 +28,15 @@
                     <input type="text" class="form-control" name="Modelo" value="<?php if(isset($this->equipo)){echo $this->equipo;}?> " readonly>
                 </div>
                 <div class="form-group">
-                    <label for="Procesador">¿Capacidad de procesador que deseas?</label>
+                    <label for="Procesador">¿Capacidad de procesador que desea?</label>
                     <input type="text" class="form-control" name="Procesador" value="<?php if(isset($this->procesador)){echo $this->procesador;}?> ">
                 </div>                 
                 <div class="form-group">                    
-                    <label for="RAM">¿Cantidad de memoria RAM que deseas?</label>
+                    <label for="RAM">¿Cantidad de memoria RAM que desea?</label>
                     <input type="text" class="form-control" name="RAM" value="<?php if(isset($this->ram)){echo $this->ram;}?> ">
                 </div>
                 <div class="form-group">
-                    <label for="HD">¿Capacidad de disco duro que deseas?</label>
+                    <label for="HD">¿Capacidad de disco duro que desea?</label>
                     <input type="text" class="form-control" name="HD" value="<?php if(isset($this->hd)){echo $this->hd;}?> ">
                 </div>
                 <div class="form-group">
