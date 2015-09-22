@@ -2,14 +2,14 @@
         </div>
         <div class="row be-blue foorter-content">
             <div class="col-sm-6 col-md-6 col-lg-6">
-                <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;Nos apasiona la atención personalizada a nuestros clientes. Una llamada telefónica o un correo electrónico representa mucho para Ud. por lo que estamos atendiendo sus problemas y necesidades con propuestas inmediatas.</p>
+                <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;Nos apasiona la atención personalizada a nuestros clientes. Una llamada telefónica o un correo electrónico representa mucho para nosotros. Queremos atender sus problemas y necesidades con propuestas inmediatas.</p>
             </div>            
             <div class="col-sm-6 col-md-6 col-lg-6">
                 <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;(502) 2332-4463 | Guatemala, Guatemala</p>
                 <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;<a href="mailto:info@e-ssisa.com"> info@e-ssisa.com</a></p>
             </div>            
         </div>
-        <div class="modal fade bs-example-modal-lg" tabindex="-1" id="contactUs" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" id="clientes" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">

@@ -81,7 +81,7 @@
                                 <li><a href="<?php echo BASE_URL.'instalacionelectrica'; ?>">Instalaciones eléctricas</a></li>                                
                             </ul>      
                         </li>
-                        <li onclick="$('#contactUs').modal();"><a href="#">Nuestros Clientes</a></li>                        
+                        <li onclick="$('#clientes').modal();"><a href="#">Nuestros Clientes</a></li>                        
                         <li><a href="<?php echo BASE_URL.'contacto'; ?>">Contáctanos</a></li>                        
                     </ul>
                 </div>
@@ -89,7 +89,7 @@
             <div class="col-xs-12 visible-xs"> 
                 <div id="cssmenu">
                     <ul>
-                        <li><a href="<?php echo BASE_URL.'index'; ?>">Index</a></li>
+                        <li><a href="<?php echo BASE_URL.'index'; ?>">Inicio</a></li>
                         <li class='active'><a href="#">Desarrollo web</a>
                             <ul>
                                 <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF (web)</a></li>
@@ -117,7 +117,7 @@
                                 <li><a href="<?php echo BASE_URL.'instalacionelectrica'; ?>">Instalaciones eléctricas</a></li>                                
                             </ul>      
                         </li>                         
-                        <li onclick="$('#contactUs').modal();"><a href="#">Nuestros Clientes</a></li>                        
+                        <li onclick="$('#clientes').modal();"><a href="#">Nuestros Clientes</a></li>                        
                         <li><a href="<?php echo BASE_URL.'contacto'; ?>">Contáctanos</a></li>                       
                     </ul>
                 </div>
