@@ -9,9 +9,21 @@
                     <h2>Ultimos Post</h2>
                     <p>
                         <?php //print_r($this->posts); 
-                            while ($row = mysql_fetch_array($this->posts)) {
+                            /*while ($row = mysql_fetch_array($this->posts)) {
                                 echo "ID:".$row{'ID'}." Nombre:".$row{'NOMBRE'}." Teléfono: ".$row{'TELEFONO'}."<br>";
-                             }     
+                             }*/
+if(preg_match('/(?i)msie [5-8]/',$_SERVER['HTTP_USER_AGENT']))
+{
+    // if IE<=8
+    //include ( TEMPLATEPATH . '/noie.php' );
+    //exit;
+    echo "lo sentimos, usas IE";
+}
+else
+{
+    // if IE>8
+    echo "Excelente, no usas IE";
+}                                                
                         ?>
                     </p>   
                 </div>

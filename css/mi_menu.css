@@ -68,7 +68,7 @@ ul, ol{
 	position: relative;
 }
 .menu li ul li ul{
-	right: -140px;
+	right: -100px;
 	top:0px;
 }
 .menu > li:hover .submenu, .menu > li:focus .submenu {

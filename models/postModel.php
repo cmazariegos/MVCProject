@@ -9,9 +9,9 @@ class postModel extends Model{
             'nombre' => 'holaPostModel'
         );
         return $post;*/
-        $clientes = $this->db->select();
+        /*$clientes = $this->db->select();
         $this->db->close();
-        return $clientes;
+        return $clientes;*/
     }
 }
 

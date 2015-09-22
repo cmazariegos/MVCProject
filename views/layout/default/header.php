@@ -49,12 +49,12 @@
                                     <ul class="submenu">
                                         <li><a href="<?php echo BASE_URL.'erp/cargarContenido/contabilidad'; ?>">Contabilidad</a></li>
                                         <li><a href="<?php echo BASE_URL.'erp/cargarContenido/bancos'; ?>">Bancos</a></li>
-                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Cuentas por cobrar</a></li>
-                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Cuentas por pagar</a></li>    
-                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Inventarios</a></li> 
-                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Activos fijos</a></li> 
-                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Recursos humanos</a></li> 
-                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/'; ?>">Punto de venta</a></li>                                        
+                                        <!--li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Cuentas por cobrar</a></li>
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Cuentas por pagar</a></li>    
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Inventarios</a></li> 
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Activos fijos</a></li> 
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Recursos humanos</a></li> 
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Punto de venta</a></li-->                                        
                                     </ul>                                
                                 </li>
                                 <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea (web)</a></li>
@@ -92,7 +92,18 @@
                         <li><a href="<?php echo BASE_URL.'index'; ?>">Inicio</a></li>
                         <li class='active'><a href="#">Desarrollo web</a>
                             <ul>
-                                <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF (web)</a></li>
+                                <li><a href="<?php echo BASE_URL.'erp'; ?>">SSISA ERP SGF (web)</a>
+                                    <ul class="submenu">
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/contabilidad'; ?>">Contabilidad</a></li>
+                                        <li><a href="<?php echo BASE_URL.'erp/cargarContenido/bancos'; ?>">Bancos</a></li>
+                                        <!--li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Cuentas por cobrar</a></li>
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Cuentas por pagar</a></li>    
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Inventarios</a></li> 
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Activos fijos</a></li> 
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Recursos humanos</a></li> 
+                                        <li><a href="<?php //echo BASE_URL.'erp/cargarContenido/'; ?>">Punto de venta</a></li-->                                        
+                                    </ul>                                     
+                                </li>
                                 <li><a href="<?php echo BASE_URL.'sistemarecargas'; ?>">SSISA Recarga en linea (web)</a></li>
                                 <li><a href="<?php echo BASE_URL.'cotizaweb'; ?>">Cotizar página web</a></li>
                                 <li><a href="<?php echo BASE_URL.'desarrollomedida'; ?>">Desarrollo a la medida</a></li>                                
