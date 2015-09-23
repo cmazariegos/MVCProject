@@ -77,7 +77,7 @@
                             <ul class="submenu"> 
                                 <li><a href="<?php echo BASE_URL.'elearning'; ?>">e-Learning</a></li>                                 
                                 <li><a href="<?php echo BASE_URL.'hosting'; ?>">Servicio de hosting</a></li>
-                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
+                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciones de red</a></li>                                
                                 <li><a href="<?php echo BASE_URL.'instalacionelectrica'; ?>">Instalaciones eléctricas</a></li>                                
                             </ul>      
                         </li>
@@ -124,7 +124,7 @@
                             <ul>     
                                 <li><a href="<?php echo BASE_URL.'elearning'; ?>">e-Learning</a></li>                                 
                                 <li><a href="<?php echo BASE_URL.'hosting'; ?>">Servicio de hosting</a></li>
-                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciónes de red</a></li>                                
+                                <li><a href="<?php echo BASE_URL.'cotizared'; ?>">Instalaciones de red</a></li>                                
                                 <li><a href="<?php echo BASE_URL.'instalacionelectrica'; ?>">Instalaciones eléctricas</a></li>                                
                             </ul>      
                         </li>                         
