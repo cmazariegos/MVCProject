@@ -15,14 +15,6 @@
                         <input type="text" class="form-control" name="Nombre" placeholder="Ingrese un nombre">
                     </div>
                     <div class="form-group">
-                        <label for="InputTel">Teléfono</label>
-                        <input type="text" class="form-control" name="Telefono" placeholder="Ingrese su teléfono">
-                    </div>
-                    <div class="form-group">
-                        <label for="InputDir">Dirección</label>
-                        <input type="text" class="form-control" name="Direccion" placeholder="Ingrese su dirección">
-                    </div>
-                    <div class="form-group">
                         <label class="control-label">Mensaje</label>
                         <textarea required="required" class="form-control" name="msg" rows="5" placeholder="Contáctanos, escribe aquí tu mensaje."></textarea>
                     </div>                    
@@ -63,15 +55,11 @@
                 rules: {
                         Email: { required:true, email: true},
                         Nombre: { required: true},                           
-                        Telefono: { required:true, number:true},
-                        Direccion: { required:true},
                         msg: { required:true}                         
                 },
                 messages: {
                         Email: "Este campo debe tener formato de correo y es necesario.",
                         Nombre : "El campo nombre es necesario",                          
-                        Telefono : "Este campo debe tener formato numérico y es necesario.",
-                        Direccion : "El campo dirección es necesario",
                         msg : "El campo mensaje es necesario",                        
                 }
         });
