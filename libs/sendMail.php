@@ -7,7 +7,7 @@ class sendMail {
         $cuerpoTabla='';
         foreach ($body as $key => $val) {
             $cuerpoTabla=$cuerpoTabla.'<tr>
-                                           <td><label>'.$key.'</label></td><td><input type="text" value="'.$val.'" readonly></td>
+                                           <td align=right><label>'.$key.'</label></td><td><input type="text" value="'.$val.'" readonly></td>
                                        </tr>';            
         }
         $texto = '
@@ -17,7 +17,10 @@ class sendMail {
                 </head>
                 <body>
                   '.$init.'
-                  <table>
+                  <table style="border:2px solid #184667;">
+                        <tr>
+                            <td style="border:2px solid #184667; color:#FFFFFF;" colspan="2" bgcolor="#184667">Características/td>
+                        </tr>                    
                        '.$cuerpoTabla.'
                   </table>
                   '.$end.'                  
