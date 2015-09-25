@@ -19,13 +19,13 @@ class cotizaredController extends Controller{
             if(!empty($_POST['Nombre']) && !empty($_POST['Email']) && !empty($_POST['noPuntos'])){            
                 $tipoCable = $_POST['tipoCable'];  
                 if ($tipoCable == "op1") {          
-                    $tc=" (Cat 5)";      
+                    $tc=" Cat 5";      
                 }
                 if ($tipoCable == "op2") {          
-                    $tc=" (Cat 6)";      
+                    $tc=" Cat 6";      
                 }
                 if ($tipoCable == "op3") {          
-                    $tc=" (otros)";      
+                    $tc=" otros";      
                 }   
                 /*if (isset($_POST['router']) && $_POST['router'] == '1'){
                     $router=" con router";
@@ -33,14 +33,14 @@ class cotizaredController extends Controller{
                     $router=" sin router";
                 }*/        
                 //$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de red, para '.$_POST['noPuntos'].' puntos, en un edificio de '.$_POST['noNiveles'].' nivel(es), con un área de '.$_POST['Area'].' metros cuadrados y con cable tipo:'.$tc.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
-                $inicio ='<p>La persona: '.$_POST['Nombre'].', ha solicitado una cotización de red con las siguientes características:</p>';
+                $inicio ='<p>La persona: '.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de red, con las siguientes características:</p>';
                 $cuerpo = array(
                     'Número de puntos:' => $_POST['noPuntos'],
                     'Niveles del edificio:' => $_POST['noNiveles'],
-                    'Área' => $_POST['Area'].' metros cuadrados',
+                    'Área:' => $_POST['Area'].' metros cuadrados',
                     'Cable tipo:' => $tc); 
                 $fin = '<p>Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'].'.</p>';
-                $texto = $this->smail->createHTML($inicio,$cuerpo,$fin);
+                $texto = $this->smail->createHTML("Características",$inicio,$cuerpo,$fin);
                 $this->smail->send('Solicitud de cotización de red', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización.</div>';
             } else {

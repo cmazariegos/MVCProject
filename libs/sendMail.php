@@ -3,7 +3,7 @@ class sendMail {
     
     private static $sInstance = null;
     
-    public function createHTML($init,$body,$end){
+    public function createHTML($title,$init,$body,$end){
         $cuerpoTabla='';
         foreach ($body as $key => $val) {
             $cuerpoTabla=$cuerpoTabla.'<tr>
@@ -19,7 +19,7 @@ class sendMail {
                   '.$init.'
                   <table style="border:2px solid #184667; border-collapse: collapse; ">
                         <tr>
-                            <td style="color:#FFFFFF;" bgcolor="#184667" colspan="2" align=center>Características</td>
+                            <td style="color:#FFFFFF;" bgcolor="#184667" colspan="2" align=center>'.$title.'</td>
                         </tr>                    
                        '.$cuerpoTabla.'
                   </table>
@@ -32,8 +32,8 @@ class sendMail {
     public function send($subject,$txt,$from){
         $header = 'MIME-Version: 1.0' . "\r\n" . 'Content-type: text/html; charset=UTF-8' . "\r\n".'From: '.$from. "\r\n";
         mail('info@e-ssisa.com', '=?UTF-8?B?'.base64_encode($subject).'?=', $txt, $header);
-        mail("cvirtual2003@hotmail.com",'=?UTF-8?B?'.base64_encode($subject).'?=',$txt);  
-        mail("carlos.mazariegos@e-ssisa.com",$subject,$txt,$from);        
+        //mail("cvirtual2003@hotmail.com",'=?UTF-8?B?'.base64_encode($subject).'?=',$txt);  
+        //mail("carlos.mazariegos@e-ssisa.com",$subject,$txt,$from);        
     }
     public static function getMe(){
         if(self::$sInstance == null){

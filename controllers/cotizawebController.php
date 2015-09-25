@@ -22,18 +22,26 @@ class cotizawebController extends Controller{
                 } else {
                     $responsive = " no responsive";
                 }
-                if (isset($_POST['estática']) && $_POST['estatica'] == '1'){
-                    $estatica = " estatica";
+                if (isset($_POST['estatica']) && $_POST['estatica'] == '1'){
+                    $estatica = " Estática";
                 } else {
-                    $estatica = " dinámica";
+                    $estatica = " Dinámica";
                 } 
                 if (isset($_POST['animada']) && $_POST['animada'] == '1'){
-                    $animada = " animada";
+                    $animada = " Animada";
                 } else {
-                    $animada = " no animada";
+                    $animada = " No animada";
                 }         
-                $texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de desarrollo web, para '.$_POST['noPaginas'].' página(s),'.$responsive.','.$estatica.' y'.$animada.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
-                $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
+                //$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de desarrollo web, para '.$_POST['noPaginas'].' página(s),'.$responsive.','.$estatica.' y'.$animada.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
+                $inicio ='<p>La persona: '.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de página web, con las siguientes características:</p>';
+                $cuerpo = array(
+                    'Número de páginas:' => $_POST['noPaginas'],
+                    '¿Responsive?' => $responsive,
+                    '¿Estática o dinámica?' => $estatica,
+                    '¿Animada?' => $animada); 
+                $fin = '<p>Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'].'.</p>';
+                $texto = $this->smail->createHTML("Características",$inicio,$cuerpo,$fin);                
+                $this->smail->send('Solicitud de cotización de página web', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización.</div>';
             } else {
                 $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe llenar todo el formulario.</div>';

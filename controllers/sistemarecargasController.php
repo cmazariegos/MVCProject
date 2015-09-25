@@ -16,8 +16,8 @@ class sistemarecargasController extends Controller{
     public function cotizar(){
         if($this->recaptcha()){        
             if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){
-                $texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización del sistema de recargas en línea. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
-                $this->smail->send('Solicitud de cotización', $texto, $_POST['Email']);   
+                $texto='La persona: '.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización del sistema de recargas en línea. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
+                $this->smail->send('Solicitud de cotización de sistema de recargas en línea', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización.</div>';
             } else {
                 $this->view->msg = '<div class="alert alert-danger" role="alert">Su mensaje no ha sido enviado, debe llenar todo el formulario.</div>';
