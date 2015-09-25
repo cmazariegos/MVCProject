@@ -13,13 +13,13 @@ class sendMail {
         $texto = '
                 <html>
                 <head>
-                  <title>Contact</title>
+                  <title>e-mail</title>
                 </head>
                 <body>
                   '.$init.'
-                  <table style="border:2px solid #184667;">
+                  <table style="border:2px solid #184667; border-collapse: collapse; ">
                         <tr>
-                            <td style="border:2px solid #184667; color:#FFFFFF;" colspan="2" bgcolor="#184667">Características/td>
+                            <td style="color:#FFFFFF;" bgcolor="#184667" colspan="2" align=center>Características</td>
                         </tr>                    
                        '.$cuerpoTabla.'
                   </table>
