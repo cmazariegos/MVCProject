@@ -17,7 +17,7 @@ class elearningController extends Controller{
         if($this->recaptcha()){          
             if(!empty($_POST['Nombre']) && !empty($_POST['Email']) && !empty($_POST['Motivo'])){                       
                 //$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de e-learning, para '.$_POST['Motivo'].'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
-                $inicio ='<p>La persona: '.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de e-learning, con las siguientes características:</p>';
+                $inicio ='<p>'.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de e-learning, con las siguientes características:</p>';
                 $cuerpo = array(
                     'Motivo:' => $_POST['Motivo']); 
                 $fin = '<p>Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'].'.</p>';

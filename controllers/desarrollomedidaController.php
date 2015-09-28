@@ -16,7 +16,7 @@ class desarrollomedidaController extends Controller{
         if($this->recaptcha()){          
             if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){                       
                 //$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de desarrolo a la medida, en lenguaje '.$_POST['Lenguaje'].', con base de datos '.$_POST['DB'].', en sistema operativo '.$_POST['Sistema'].', para '.$_POST['Usuarios'].' usuarios y en tipo de aplicación: '.$_POST['Tipo'].' .Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
-                $inicio ='<p>La persona: '.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de desarrollo a la medida, con las siguientes características:</p>';
+                $inicio ='<p>'.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de desarrollo a la medida, con las siguientes características:</p>';
                 $cuerpo = array(
                     'Lenguaje:' => $_POST['Lenguaje'],
                     'Base de datos:' => $_POST['DB'],

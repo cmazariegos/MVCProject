@@ -28,6 +28,7 @@ class servidoresController extends Controller{
     }
     public function cotizar(){
         $texto = "";
+        $fin = "";
         if($this->recaptcha()){          
             if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){
                 if (isset($_POST['instalacion']) && $_POST['instalacion'] == '1'){
@@ -35,20 +36,19 @@ class servidoresController extends Controller{
                 } else {
                     $instalacion = " Sin servicio de instalación";
                 }                
-                /*$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización del siguiente servidor: '.$_POST['Modelo'].', con procesador '.$_POST['Procesador'].', '.$_POST['RAM'].' de memoria RAM, '.$_POST['HD'].' de disco duro, licencia '.$_POST['Licencia'].' y'.$instalacion.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
+                /*$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización del siguiente servidor: '.$_POST['Modelo'].', con procesador '.$_POST['Procesador'].', '.$_POST['RAM'].' de memoria RAM, '.$_POST['HD'].' de disco duro, licencia '.$_POST['Licencia'].' y'.$instalacion.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];*/
                 if(!empty($_POST['observacion'])){
-                    $texto = $texto. ' . Observación: '. $_POST['observacion'];
-                }*/
-                $inicio ='<p>La persona: '.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de servidor, con las siguientes características:</p>';
+                    $fin = $fin.'<p>Observación: '. $_POST['observacion'].'.</p>';
+                }
+                $inicio ='<p>'.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de servidor, con las siguientes características:</p>';
                 $cuerpo = array(
                     'Modelo:' => $_POST['Modelo'],
                     'Procesador:' => $_POST['Procesador'],
                     'RAM:' => $_POST['RAM'],
                     'Disco:' => $_POST['HD'],
                     'Licencia:' => $_POST['Licencia'],
-                    'Instalación:' => $instalacion,
-                    'Observación:' => $_POST['observacion']); 
-                $fin = '<p>Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'].'.</p>';
+                    'Instalación:' => $instalacion); 
+                $fin = $fin.'<p>Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'].'.</p>';
                 $texto = $this->smail->createHTML("Características",$inicio,$cuerpo,$fin);                
                 $this->smail->send('Solicitud de cotización de servidor', $texto, $_POST['Email']);   
                 $this->view->msg = '<div class="alert alert-info" role="alert">Su mensaje ha sido enviado, pronto estaremos enviandole su cotización.</div>';

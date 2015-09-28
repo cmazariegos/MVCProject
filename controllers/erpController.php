@@ -24,7 +24,7 @@ class erpController extends Controller{
         if($this->recaptcha()){        
             if(!empty($_POST['Nombre']) && !empty($_POST['Email'])){
                 //$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización del modulo: '.$modulo.', del sistema ERP, para '.$_POST['Usuarios'].' usuarios, con sistema operativo '.$_POST['Sistema'].' y servidor de aplicaciones '.$_POST['Servidor'].'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
-                $inicio ='<p>La persona: '.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de ERP, con las siguientes características:</p>';
+                $inicio ='<p>'.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de ERP, con las siguientes características:</p>';
                 $cuerpo = array(
                     'Modulo:' => $modulo,
                     'Servidor de aplicaciones:' => $_POST['Servidor'],
