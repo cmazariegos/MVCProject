@@ -32,7 +32,6 @@ class cotizawebController extends Controller{
                 } else {
                     $animada = " No animada";
                 }         
-                //$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de desarrollo web, para '.$_POST['noPaginas'].' página(s),'.$responsive.','.$estatica.' y'.$animada.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
                 $inicio ='<p>'.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de página web, con las siguientes características:</p>';
                 $cuerpo = array(
                     'Número de páginas:' => $_POST['noPaginas'],

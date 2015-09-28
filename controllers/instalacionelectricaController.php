@@ -16,7 +16,6 @@ class instalacionelectricaController extends Controller{
     public function cotizar(){
         if($this->recaptcha()){          
             if(!empty($_POST['Nombre']) && !empty($_POST['Email']) && !empty($_POST['noPuntos'])){                 
-                //$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de instalación eléctrica,  para '.$_POST['noPuntos'].' puntos, en un edificio de '.$_POST['noNiveles'].' nivel(es), con un área de '.$_POST['Area'].' metros cuadrados. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
                 $inicio ='<p>'.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de instalación eléctrica, con las siguientes características:</p>';
                 $cuerpo = array(
                     'Número de puntos:' => $_POST['noPuntos'],

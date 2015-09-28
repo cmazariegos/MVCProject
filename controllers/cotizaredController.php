@@ -32,7 +32,6 @@ class cotizaredController extends Controller{
                 } else {
                     $router=" sin router";
                 }*/        
-                //$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización de red, para '.$_POST['noPuntos'].' puntos, en un edificio de '.$_POST['noNiveles'].' nivel(es), con un área de '.$_POST['Area'].' metros cuadrados y con cable tipo:'.$tc.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];
                 $inicio ='<p>'.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de red, con las siguientes características:</p>';
                 $cuerpo = array(
                     'Número de puntos:' => $_POST['noPuntos'],

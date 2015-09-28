@@ -35,9 +35,8 @@ class servidoresController extends Controller{
                     $instalacion = " Con servicio de instalación";
                 } else {
                     $instalacion = " Sin servicio de instalación";
-                }                
-                /*$texto='La persona: '.$_POST['Nombre'].', ha solicitado una cotización del siguiente servidor: '.$_POST['Modelo'].', con procesador '.$_POST['Procesador'].', '.$_POST['RAM'].' de memoria RAM, '.$_POST['HD'].' de disco duro, licencia '.$_POST['Licencia'].' y'.$instalacion.'. Enviar cotización al correo: '.$_POST['Email'].' o comunicarse al teléfono: '.$_POST['Telefono'];*/
-                if(!empty($_POST['observacion'])){
+                }                                
+                if(isset($_POST['observacion']) && !empty($_POST['observacion'])){
                     $fin = $fin.'<p>Observación: '. $_POST['observacion'].'.</p>';
                 }
                 $inicio ='<p>'.$_POST['Nombre'].', con dirección: '.$_POST['Direccion'].', ha solicitado una cotización de servidor, con las siguientes características:</p>';
