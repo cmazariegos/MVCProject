@@ -14,7 +14,7 @@ class erpModel  extends Model{
         $data = "";
         switch ($content) {
             case "contabilidad":
-                $data = '<div id="MyCarousel" style="min-height: 360px;" class="carousel slide" data-ride="carousel">
+                $data = '<div id="MyCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#MyCarousel" data-slide-to="0" class="active"></li>
@@ -25,30 +25,20 @@ class erpModel  extends Model{
                         </ol>
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <div class="delimitador">                                 
-                                    <img src="'.BASE_URL.'img/erp/conta/Balance_General.png"  />
-                                </div> 
+                            <div class="item active">                               
+                                <img src="'.BASE_URL.'img/erp/conta/Balance_General.png"  />
                             </div>
-                            <div class="item">
-                                <div class="delimitador">                                 
-                                    <img src="'.BASE_URL.'img/erp/conta/cuentas_contables.png"  />
-                                </div>
+                            <div class="item">                               
+                                <img src="'.BASE_URL.'img/erp/conta/cuentas_contables.png"  />
                             </div>     
-                            <div class="item">
-                                <div class="delimitador">                                 
-                                    <img src="'.BASE_URL.'img/erp/conta/Ingreso de Poliza.png"  />
-                                </div>
+                            <div class="item">                                 
+                                <img src="'.BASE_URL.'img/erp/conta/Ingreso de Poliza.png"  />
                             </div>
-                            <div class="item">
-                                <div class="delimitador">                                 
-                                    <img src="'.BASE_URL.'img/erp/conta/polizas.png"  />
-                                </div>
+                            <div class="item">                               
+                                <img src="'.BASE_URL.'img/erp/conta/polizas.png"  />
                             </div>          
-                            <div class="item">
-                                <div class="delimitador">                                 
-                                    <img src="'.BASE_URL.'img/erp/conta/Reporte_Balance_General_Saldos.png"  />
-                                </div>
+                            <div class="item">                                
+                                <img src="'.BASE_URL.'img/erp/conta/Reporte_Balance_General_Saldos.png"  />
                             </div>                             
                         </div>
                         <!-- Controls -->
